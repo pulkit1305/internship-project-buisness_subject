@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 11: Resources</span>
+                <span class="lname">Classification of Businesses</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Subject vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r3">General vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: Question 1</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r5">Slideshow: Sectors of the economy</button>
+                <button type="button" class="btn yl resr" data-id="r6">Worksheet 1</button>
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r7">Worksheet 2</button>
+
+                <h2>Teaching session 3 </h2>
+                <button type="button" class="btn yl resr" data-id="r8">Slideshow: Changes in industrial sectors
+                    over time</button>
+                <button type="button" class="btn yl resr" data-id="r9">Worksheet 3</button>
+
+                <h2>End-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Question 2</button>
+
+                
+                <h2>Alternative starter</h2>
+                <button type="button" class="btn yl resr" data-id="r11">Slideshow: Question 3</button>
+
+                <h2>Homework</h2>
+                <button type="button" class="btn yl resr" data-id="r12">Homework sheet</button>
+
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r13">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul>
+                                    <li>distinguish between the three main sectors of the economy</li>
+                                    <li>understand the changes that have occurred in sectors over time.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>Subject vocabulary</h3>
+                                <ul>
+                                    <li><strong>capital intensive: </strong>production activity that is dominated by
+                                        machinery rather than by using human labour</li>
+                                    <li><strong>chain of production: </strong>the stages involved in turning raw
+                                        materials into finished goods for sale to consumers</li>
+                                    <li><strong>de-industrialisation: </strong>an economy moving away from manufacturing
+                                        activity, usually towards the tertiary sector</li>
+                                    <li><strong>labour intensive: </strong>production which involves more human inputs
+                                        relative to machinery</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <ul>
+                                    <li><strong>primary sector:</strong>extracting raw materials from the earth</li>
+                                    <li><strong>secondary sector:</strong>converting raw materials into finished or
+                                        semi-finished goods</li>
+                                    <li><strong>tertiary sector:</strong>&nbsp;providing a wide variety of services</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 class="indentLeft" id="r3">Key definitions</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>General vocabulary</h3>
+                                <ul>
+                                    <li><strong>industrialisation: </strong>a process where an economy moves away
+                                        from primary sector activity towards a greater focus on manufacturing
+                                        activity</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource4">
+                <h2 class="indentLeft" id="r4">Starter</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>Question 1</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="133">
+                                                <p><strong>Form of business ownership</strong></p>
+                                            </td>
+                                            <td width="235">
+                                                <p><strong>Feature</strong></p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>Likely consequence of feature</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133">
+                                                <p><strong>1 </strong>Unincorporated business</p>
+                                            </td>
+                                            <td width="235">
+                                                <p><strong>A </strong>Large organisation providing services that private
+                                                    businesses are not willing to do as they provide services for free
+                                                </p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>i</strong> Owner is personally responsible for the debts of
+                                                    the business</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133">
+                                                <p><strong>2 </strong>Incorporated business</p>
+                                            </td>
+                                            <td width="235">
+                                                <p><strong>B </strong>Unlimited liability for the owner</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>ii</strong> Relatively easy to raise large amounts of capital
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133">
+                                                <p><strong>3 </strong>Public business</p>
+                                            </td>
+                                            <td width="235">
+                                                <p><strong>C </strong>Owned by members who share a common goal</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>Iii </strong>More motivated workers to achieve the
+                                                    organisation&rsquo;s objectives</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133">
+                                                <p><strong>4 </strong>Social enterprise</p>
+                                            </td>
+                                            <td width="235">
+                                                <p><strong>D </strong>Ability to sell shares to the public via a stock
+                                                    market flotation</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>iv</strong> May be difficult to control due to its size.
+                                                    Management may be inefficient due to goals being service-related
+                                                    rather than financial</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slideItem">
+                                <h3>Answers</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="132">
+                                                <p><strong>Form of business ownership</strong></p>
+                                            </td>
+                                            <td width="236">
+                                                <p><strong>Feature</strong></p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>Likely consequence of feature</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="132">
+                                                <p><strong>1</strong> Unincorporated business</p>
+                                            </td>
+                                            <td width="236">
+                                                <p><strong>B</strong> Unlimited liability for the owner</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>i</strong> Owner is personally responsible for the debts of
+                                                    the business</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="132">
+                                                <p><strong>2</strong> Incorporated business</p>
+                                            </td>
+                                            <td width="236">
+                                                <p><strong>D</strong> Ability to sell shares to the public via a stock
+                                                    market flotation</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>ii</strong> Relatively easy to raise large amounts of capital
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="132">
+                                                <p><strong>3</strong> Public business</p>
+                                            </td>
+                                            <td width="236">
+                                                <p><strong>A</strong> Large organisation providing services which
+                                                    private businesses are not willing to do as they provide services
+                                                    for free</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>iv</strong> May be difficult to control due to its size.
+                                                    Management may be inefficient due to goals being service-related
+                                                    rather than financial</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="132">
+                                                <p><strong>4</strong> Social enterprise</p>
+                                            </td>
+                                            <td width="236">
+                                                <p><strong>C</strong> Owned by members who share a common goal</p>
+                                            </td>
+                                            <td width="233">
+                                                <p><strong>iii</strong> More motivated workers to achieve the
+                                                    organisation&rsquo;s objectives</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r5a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>Sectors of the economy</h3>
+                                <p style="text-align: center;"><strong>Sectors of the economy</strong></p>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"><strong>Primary sector:</strong>extracting raw materials from the earth.</p>
+                                    <ul>
+                                        <li ><p>Involves agriculture, forestry, fishing and mining or quarrying raw materials.</p></li>
+                                    </ul>
+                                    </p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"><strong>Secondary sector:</strong> converting raw materials into finished or
+                                        semi-finished goods.
+                                    <ul >
+                                        <li>Involves any form of manufacturing, construction or processing.</li>
+                                        <li>Turns inputs into goods that are ready for sale to an end consumer.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"><strong>Tertiary sector:</strong> providing a wide variety of services.</p>
+                                    <ul>
+                                        <li>Invoices selling goods to an end consumer or providing any form of service
+                                            to individuals or businesses.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="slideItem">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="170">
+                                                <p>&middot; <strong>Collecting water from a natural spring</strong></p>
+                                            </td>
+                                            <td width="123">
+                                                <p>&middot; Running a car hire business</p>
+                                            </td>
+                                            <td width="147">
+                                                <p>&middot; Advertising an engagement ring</p>
+                                            </td>
+                                            <td width="153">
+                                                <p>&middot; Selling snacks in a supermarket</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="170">
+                                                <p>&middot; Processing boards into a school desk</p>
+                                            </td>
+                                            <td width="123">
+                                                <p>&middot; <strong>Gold mining</strong></p>
+                                            </td>
+                                            <td width="147">
+                                                <p>&middot; Filtering spring water to remove impurities</p>
+                                            </td>
+                                            <td width="153">
+                                                <p>&middot; Turning sawdust into planks of chipboard</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="170">
+                                                <p>&middot; Making jewellery</p>
+                                            </td>
+                                            <td width="123">
+                                                <p>&middot; <strong>Growing wheat</strong></p>
+                                            </td>
+                                            <td width="147">
+                                                <p>&middot; Serving drinks in a caf&eacute;</p>
+                                            </td>
+                                            <td width="153">
+                                                <p>&middot; <strong>Getting sand from a beach</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="170">
+                                                <p>&middot; Robots inserting windscreens in a factory</p>
+                                            </td>
+                                            <td width="123">
+                                                <p>&middot; Producing glass</p>
+                                            </td>
+                                            <td width="147">
+                                                <p>&middot; <strong>Chopping down trees</strong></p>
+                                            </td>
+                                            <td width="153">
+                                                <p>&middot; Baking a loaf of bread</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="170">
+                                                <p>&middot; Setting diamonds into a metal band</p>
+                                            </td>
+                                            <td width="123">
+                                                <p>&middot; Teaching Business to a group of students</p>
+                                            </td>
+                                            <td width="147">
+                                                <p>&middot; Turning wheat into bread flour</p>
+                                            </td>
+                                            <td width="153">
+                                                <p>&middot; Adding carbon dioxide to bottled water</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="slideItem">
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Primary</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Secondary</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Tertiary</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Collecting water from a natural spring</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Filtering spring water to remove impurities</p>
+                                                <p>Adding carbon dioxide to bottled water</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Serving drinks in a caf&eacute;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Gold mining</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Making jewellery</p>
+                                                <p>Setting diamonds into a metal band</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Advertising an engagement ring</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Growing wheat</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Turning wheat into bread flour</p>
+                                                <p>Baking a loaf of bread</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Selling snacks in a supermarket</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Getting sand from a beach</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Producing glass</p>
+                                                <p>Robots inserting windscreens in a factory</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Running a car hire business</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Chopping down trees</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Turning sawdust into planks of chipboard</p>
+                                                <p>Processing boards into a school desk</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>Teaching Business to a group of students</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Student work 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson11_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson11_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+
+            <div class="resource" id="resource8">
+                <h2 class="indentLeft" id="r8">Slideshow</h2>
+                <div class="slideshowContainer" id="r8a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>Changes in industrial sectors over time</h3>
+                                <p><strong>Primary sector</strong></p>
+                                <p>Primary sector activity has become much more capital intensive over the last 100
+                                    years.</p>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;"><strong>Changes in the primary
+                                            sector</strong></p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td width="200">
+                                                    <p>Increased efficiency</p>
+                                                </td>
+                                                <td width="200">
+                                                    <p>Lower employment</p>
+                                                </td>
+                                                <td width="200">
+                                                    <p>Reduced costs of production</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="200">
+                                                    <p>Greater investment required</p>
+                                                </td>
+                                                <td width="200">
+                                                    <p>Work much safer</p>
+                                                </td>
+                                                <td width="200">
+                                                    <p>Greater total output</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Secondary sector in recent years</strong></p>
+                                <ul>
+                                    <li>Activity has declined in high-income, developed countries.</li>
+                                    <li>This has led to increased unemployment in those industries.</li>
+                                    <li>Other countries have increased the size of their secondary sector to become
+                                        production centres for global manufacturing and exporting finished goods around
+                                        the world.</li>
+                                    <li>Many of those countries have developed their economies and improved overall
+                                        living standards.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p>Decide if these features apply to the primary, secondary or tertiary sector.</p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="189">
+                                                <p><strong>a</strong> Growing rapidly in more economically developed
+                                                    countries</p>
+                                            </td>
+                                            <td width="170">
+                                                <p><strong>b</strong> Employment levels falling due to rapid
+                                                    industrialisation</p>
+                                            </td>
+                                            <td width="242">
+                                                <p><strong>c</strong> Includes many small producers but some large
+                                                    companies that use automation to produce on a huge scale</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="189">
+                                                <p><strong>d</strong> Increased activity as demand for services grows
+                                                </p>
+                                            </td>
+                                            <td width="170">
+                                                <p><strong>e</strong> Hi-tech production methods have recently reduced
+                                                    employment</p>
+                                            </td>
+                                            <td width="242">
+                                                <p><strong>f</strong> Has become concentrated in a smaller number of
+                                                    countries</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="189">
+                                                <p><strong>g</strong> Traditionally has many low-skill, low-paid jobs
+                                                </p>
+                                            </td>
+                                            <td width="170">
+                                                <p><strong>h</strong> Output has grown but employment and relative size
+                                                    fell hugely</p>
+                                            </td>
+                                            <td width="242">
+                                                <p><strong>i</strong> Greater size of public sector due to rising tax
+                                                    revenues increased importance of this sector</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slideItem">
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>Primary</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>Secondary</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>Tertiary</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>b</strong> Employment levels falling due to rapid
+                                                    industrialisation</p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>c</strong> Includes many small producers but some large
+                                                    companies that use automation to produce on a huge scale</p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>a</strong> Growing rapidly in more-economically developed
+                                                    countries</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>g</strong> Traditionally has many low-skill, low-paid jobs
+                                                </p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>e</strong> Hi-tech production methods have recently reduced
+                                                    employment</p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>d</strong> Increased activity as demand for services grows
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>h</strong> Output has grown but employment and relative size
+                                                    fell hugely</p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>f</strong> Has become concentrated in a smaller number of
+                                                    countries</p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>i</strong> Greater size of public sector due to rising tax
+                                                    revenues increased importance of this sector</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slideItem">
+
+                                <p>Production within the primary sector has decreased over time.</p>
+                                <p>True or false?</p>
+                            </div>
+                            <div class="slideItem">
+
+                                <p>Countries tend to specialise in different sectors of activity.</p>
+                                <p>True or false?</p>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Student work 3</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson11_Worksheet3.docx">Worksheet 3</a>
+            </div>
+
+
+            <div class="resource" id="resource10">
+                <h2 class="indentLeft" id="r10">End-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r10a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Question 2</h4>
+                                <p><strong>2</strong> Use what you have learned today to think about businesses or
+                                    business activities that you know of within each sector of our country&rsquo;s
+                                    economy.</p>
+                                <ol>
+                                    <li>Identify:</li>
+                                
+                                <ul>
+                                    <li>a specific type of business activity in the primary sector</li>
+                                    <li>a specific business in the secondary sector</li>
+                                    <li>a specific business in the tertiary sector.</li>
+                                </ul>
+                               
+                                    <li>Explain <strong>why</strong> each business (or business activity) operates or
+                                        takes place within the primary, secondary or tertiary sector.</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource11">
+                <h2 class="indentLeft" id="r11">Alternative starter</h2>
+                <h3>Question 3</h3>
+                <div class="slideshowContainer" id="r11a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <Image>Image</Image>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer 1
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Sole trader</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer 2
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Partner</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer 3
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Private</p>
+                            
+                            
+                                    <button class="btn" type="button">
+                                        Answer 4
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Enterprise</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer 5
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Public</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer 6
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Social</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer 7
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Worker</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer 8
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Charity</p>
+                            
+                                    <button class="btn" type="button">
+                                        Answer: Grey word
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">Tertiary</p>
+                            
+                                </div>
+
+                            </div>
+                            <div class="slideItem">
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource12">
+                <h2 id="r12">Homework</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson11_Homework.docx">Homework
+                    sheet</a>
+            </div>
+
+
+            <div class="resource" id="resource13">
+                <h2 id="r13">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson11_Answers.docx">Answer sheet</a>
+            </div>
+
+
+
+
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

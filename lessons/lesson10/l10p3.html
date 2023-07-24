@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 10: Resources</span>
+                <span class="lname">Social Enterprises</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Key definitions</button>
+                <button type="button" class="btn yl resr" data-id="r3">Question 1</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: Social enterprises</button>
+                <button type="button" class="btn yl resr" data-id="r5">Worksheet 1</button>
+
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r6">Slideshow: Social enterprise advantages</button>
+                <button type="button" class="btn yl resr" data-id="r7">Worksheet 2</button>
+
+                <h2>Homework</h2>
+                <button type="button" class="btn yl resr" data-id="r8">Homework sheet</button>
+
+
+                <h2>Alternative starter</h2>
+                <button type="button" class="btn yl resr" data-id="r9">Slideshow: ABC: Privatisation or
+                    nationalisation?</button>
+
+                <h2>Alternative end-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Question 2</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r11">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul style="margin-left: 3%;">
+                                    <li>understand the main features of a social enterprise</li>
+                                    <li>compare different forms of ownership and select the most appropriate choices for
+                                        different types of business.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Key definitions</h2>
+                                <ul>
+                                    <li><strong>charity:</strong> an organisation that provides assistance to people who
+                                        are in need</li>
+                                    <li><strong>consumer cooperative:</strong> a cooperative whose customers own it</li>
+                                    <li><strong>cooperative:</strong> an organisation whose members own and control it;
+                                        the members are often workers in the business or customers of the business</li>
+                                    <li><strong>retail cooperative:</strong> a cooperative that is owned by retailers
+                                        who
+                                        work together to increase their buying power</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+
+                                <ul>
+                                    <li><strong>social enterprise:</strong> a business that aims to improve human or
+                                        environmental well-being</li>
+                                    <li><strong>stakeholder:</strong> any individual or group with an interest in the
+                                        operation of a business</li>
+                                    <li><strong>worker cooperative:</strong> a cooperative that is owned by its members
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 class="indentLeft" id="r3">Starter</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Question 1</h4>
+                                <p>In this lesson, students will learn to:</p>
+                                <ol>
+                                    <li>Choose words or phrases from the word bank to fill in the gaps.</li>
+                                </ol>
+
+                                <p>_____________ corporations exist to provide goods or services which __________ sector
+                                    companies are not willing to, because they would not be able to make a __________.
+                                    Governments can ensure that _________ services are made available to __________.
+                                    Examples of businesses operated by the government can include ___________, schools
+                                    or the army. One of the _________ of public sector provision is that _______ spent
+                                    running those businesses has to be raised through __________.</p>
+
+                                <p> benefits, cinemas, drawbacks, everyone, hospitals, important, loss, luxury, money,
+                                    private, profit, public, services, taxes</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answers
+                                    </button>
+                                    <p class="notvisible"><strong>Public</strong> corporations exist to provide goods or services which
+                                        <strong>private</strong> sector companies
+                                        are not willing to, because they would not be able to make a <strong>profit</strong>. Governments
+                                        can
+                                        ensure that <strong>important</strong> services are made available to <strong>everyone</strong>. Examples of
+                                        businesses operated by the government can include <strong>hospitals</strong>, schools or the
+                                        army.
+                                        One of the <strong>drawbacks</strong> of public sector provision is that <strong>money</strong> spent running
+                                        those
+                                        businesses has to be raised through <strong>taxes</strong>.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource4">
+                <h2 class="indentLeft" id="r4">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r4a">
+
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Social enterprises</h2>
+                                <p style="text-align: center;"><strong>Social enterprises</strong></p>
+                                <p>Social enterprises are sometimes called non-profit (or not-for-profit) organisations.
+                                </p>
+                                <p>Usually, social enterprises:</p>
+                                <ul style="margin-left: 3%;">
+                                    <li>have a particular non-financial objective that is at the core of the
+                                        organisation&rsquo;s existence</li>
+                                    <li>are controlled in the interests of that specific social mission</li>
+                                    <li>are funded by donations or running an activity that generates income</li>
+                                </ul>
+
+                            </div>
+                            <div class="slideItem">
+
+                                <p><strong>Forms of social enterprise</strong></p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible">Charity </p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible">Cooperative </p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible">Consumer cooperative (sometimes called &lsquo;customer
+                                        cooperative&rsquo;) </p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible">Retail cooperative </p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible">Worker cooperative </p>
+                                </div>
+
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Which form of social enterprise best matches the feature given?</strong></p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="179">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="161">
+                                                <p><strong>Consumer cooperative</strong></p>
+                                            </td>
+                                            <td width="142">
+                                                <p><strong>Worker cooperative</strong></p>
+                                            </td>
+                                            <td width="119">
+                                                <p><strong>Charity</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Aims to raise donations in order to pursue its objectives</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Its employees own it</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Its customers own it</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Likely to aim for low prices</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Likely to value job security</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table><br>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="179">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="161">
+                                                <p><strong>Consumer cooperative</strong></p>
+                                            </td>
+                                            <td width="142">
+                                                <p><strong>Worker cooperative</strong></p>
+                                            </td>
+                                            <td width="119">
+                                                <p><strong>Charity</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Aims to raise donations in order to pursue its objectives</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&check;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Its employees own it</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&check;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Its customers own it</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&check;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Likely to aim for low prices</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&check;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Likely to value job security</p>
+                                            </td>
+                                            <td width="161">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="142">
+                                                <p>&check;</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Which of the following are key features of a social enterprise?</strong></p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="208">
+                                                <p>Not controlled by any single, large shareholder</p>
+                                            </td>
+                                            <td width="217">
+                                                <p>Primary objective is based on achieving some form of social fairness
+                                                    (equity)</p>
+                                            </td>
+                                            <td width="176">
+                                                <p>Exist to make a profit for shareholders</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="208">
+                                                <p>Members elect managers to act in the best interests of workers,
+                                                    customers or third parties</p>
+                                            </td>
+                                            <td width="217">
+                                                <p>Successful businesses may be sold to another owner to provide a large
+                                                    return to owners</p>
+                                            </td>
+                                            <td width="176">
+                                                <p>Generate the majority of their income through trade or donations</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="208">
+                                                <p>Pay most of their &lsquo;profits&rsquo; as dividends to owners</p>
+                                            </td>
+                                            <td width="217">
+                                                <p>Are accountable and transparent to any stakeholder</p>
+                                            </td>
+                                            <td width="176">
+                                                <p>Return their &lsquo;profits&rsquo; to members or good causes</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Key features of a social enterprise</strong></p>
+                                <ul class="square" style="margin-left: 3%;">
+                                    <li>Not controlled by any single, large shareholder</li>
+                                    <li>Primary objective is based on achieving some form of social fairness (equity)
+                                    </li>
+                                    <li>Members elect managers to act in the best interests of workers, customers or
+                                        third parties</li>
+                                    <li>Generate the majority of their income through trade or donations</li>
+                                    <li>Are accountable and transparent to any stakeholder</li>
+                                    <li>Return their &lsquo;profits&rsquo; to members or good causes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Student work 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson10_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+
+            <div class="resource" id="resource6">
+                <h2 class="indentLeft" id="r6">Slideshow</h2>
+                <div class="slideshowContainer" id="r6a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Social enterprise advantages</h2>
+                                <h4>Advantages of being a social enterprise</h4>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"style="display:flex; gap:30px;">
+                                  
+                                    <span style="flex-basis:20px; text-align:left;"><strong>1</strong></span><span>Social and/or environmental goals are likely to attract customers</span>
+                                    </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"style="display:flex; gap:30px;">
+                               
+                                    <span style="flex-basis:20px; text-align:left;"><strong>2</strong></span><span>Motivational impacts when companies treat workers well</span>
+                                    </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"style="display:flex; gap:30px;">
+   
+                                    <span style="flex-basis:20px; text-align:left;"><strong>3</strong></span><span>Chance of ownership</span>
+                                    </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Expand
+                                    </button>
+                                    <p class="notvisible"style="display:flex; gap:30px;">
+
+                                    <span style="flex-basis:20px; text-align:left;"><strong>4</strong></span><span>Small businesses with community connections</span>
+                                    </p>
+                                </div>
+
+
+
+                              
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson10_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+          
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Alternative starter</h2>
+                <div class="slideshowContainer" id="r9a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>ABC: Privatisation or nationalisation?</h2>
+                                <ul>
+                                    <li>Problems associated with privatisation could include:
+                                        <ol class="l2" style="margin-left: 3%;">
+                                            <li>The privatised company may withdraw important services from some
+                                                citizens if they cannot afford to pay</li>
+                                            <li>A private owner may significantly increase prices to make more profit
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <ul>
+                                    <li>Problems with retaining nationalised status could include:
+                                        <ol class="l2" style="margin-left: 3%;">
+                                            <li>The company is making a loss and taxpayers must fund this</li>
+                                            <li>Some people think ABC&rsquo;s news coverage is biased because it has to
+                                                &lsquo;please&rsquo; the government which controls it</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="resource" id="resource10">
+                <h2 class="indentLeft" id="r10">Alternative end-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r10a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Question 2</h4>
+                                <p style="display:flex; gap:30px;"><span style="flex-basis:20px; text-align:left;"><strong>2</strong></span><span>Identify examples of social enterprises that operate in these areas:</span></p>
+                                
+                                <ol class="l2"style="margin-left:3%">
+                                    <li>promoting the interests of members</li>
+                                    <li>providing goods or services to under-privileged members of society</li>
+                                    <li>protecting the natural environment</li>
+                                    <li>protecting a minority interest group.</li>
+                                </ol>
+                                <p>For each example, be ready to explain what that organisation tries to achieve and how
+                                    it seeks to achieve its goals.</p>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Homework</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson10_Homework.docx">Homework
+                    Sheet</a>
+            </div>
+
+
+            <div class="resource" id="resource11">
+                <h2 id="r11">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson10_Answers.docx">Answer sheet</a>
+            </div>
+
+
+
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

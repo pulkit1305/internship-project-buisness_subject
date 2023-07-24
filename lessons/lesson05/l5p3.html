@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+        .hint span.notvisible {
+            visibility: hidden;
+          }
+    </style>
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 5 | Resources</span>
+                <span class="lname">Sole Traders and Partnerships</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+
+
+
+
+
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Key definitions</button>
+                <button type="button" class="btn yl resr" data-id="r3">Slideshow: Questions 1 and 2</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: Legal structures</button>
+                <button type="button" class="btn yl resr" data-id="r5">Worksheet 1</button>
+       
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r6">Slideshow: Benefits of partnerships</button>
+
+                <button type="button" class="btn yl resr" data-id="r7">Worksheet 2</button>
+                <button type="button" class="btn yl resr" data-id="r8">Question 3</button>
+                <h2>challenge</h2>
+                <button type="button" class="btn yl resr" data-id="r9">Question 4</button>
+                <h2>Homework</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Homework sheet</button>
+                <h2>Alternative starter</h2>
+                <button type="button" class="btn yl resr" data-id="r11">Questions 5 and 6</button>
+
+                <h2>Alternative end-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r12">Questions 7 to 9</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r13">Answer sheet</button>
+
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to understand the distinction between
+                                    unincorporated and incorporated businesses. </p>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Subject vocabulary</h2>
+                                <ul>
+                                    <li><strong>deed of partnership:</strong> a legally binding document that states the
+                                        formal rights of partners in a business</li>
+                                    <li><strong>incorporated business:</strong> a business that has a separate legal
+                                        identity from its owners</li>
+                                    <li><strong>limited liability: </strong>when the business owner is only liable for
+                                        the original amount of money invested in the business</li>
+                                    <li><strong>partnership:</strong> a business owned by between 2 and 20 people</li>
+                                </ul>
+
+                            </div>
+                            <div class="slideItem">
+                                <ul>
+                                    <li><strong>percentage change:</strong> change divided by the original value then
+                                        multiplied by 100</li>
+                                    <li><strong>sole trader:</strong> a business owned by a single person</li>
+                                    <li><strong>unincorporated business:</strong>a business where there is no legal
+                                        separation between the owner and the business</li>
+                                    <li><strong>unlimited liability:</strong>when the owner of a business is personally
+                                        liable for the debts of the business.&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definition</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>General vocabulary</h2>
+                                <ul>
+                                    <li><strong>legal structure: </strong> the way the law views how a business is set
+                                        up, owned and run </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 class="indentLeft" id="r3">Starter</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <p><strong>1&nbsp;</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Which one of the following
+                                    is a non-financial objective of a business?<br /><strong>&nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp;</strong>&nbsp; &nbsp;Select the correct answer.</p>
+                                <p><br /><strong>&nbsp; &nbsp; &nbsp; &nbsp; <strong>A</strong></strong>&nbsp; &nbsp; to
+                                    increase profits.<br /><strong>&nbsp; &nbsp; &nbsp; &nbsp; B</strong>&nbsp; &nbsp;
+                                    to increase sales.<br /><strong>&nbsp; &nbsp; &nbsp; &nbsp; C&nbsp;</strong>&nbsp;
+                                    &nbsp;to increase the owner's personal satisfaction.<br /><strong>&nbsp; &nbsp;
+                                        &nbsp; &nbsp; D&nbsp; &nbsp;&nbsp;</strong>to increase market
+                                    share.<br /><strong>&nbsp; &nbsp; &nbsp; &nbsp; E</strong>&nbsp; &nbsp; &nbsp;to
+                                    survive.</p>
+
+                                    <div class="hint qHint">
+                                        <button class="btn" type="button">
+                                            Answer
+                                        </button>
+                                        <p class="notvisible"><strong>c</strong></p>
+                                    </div>
+                                    
+                               
+
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>2</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    In 2019. Tesla sold 365 232 cars. In 2020, that figure increased to 509 737.
+                                    Calculate the percentage change in Tesla&rsquo;s car sales between 2019 and 2020.
+                                </p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Select the correct answer.
+                                </p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A&nbsp; 28.3%</p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;B&nbsp; 39.6%</p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>C&nbsp;&nbsp;</strong>71.7%
+                                </p>
+                                <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;D&nbsp; </strong>19.2%</p>
+                                <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E&nbsp;&nbsp;</strong>192.2%
+                                </p>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer  
+                                    </button>
+                                    <span class="notvisible"> <p><strong>B</strong></p>
+                                    <p>\(\mathrm{Formula}:\;\frac{(\mathrm{New}-\mathrm{Old})}{\mathrm{Old}}\times100\)
+                                    </p>
+                                    <p>\(\mathrm{Formula}:\;\frac{(509737-365232)}{365232}\times100=\)</p>
+                                    <p><strong>39.6%</strong></p></span>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource4">
+                <h2 id="r4">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4><strong>Legal structures</strong></h4>
+                                <p><strong>Which of the following are likely to be features of an unincorporated
+                                        business?</strong></p>
+                                <ol type="A">
+                                    <li>Complex with many employees</li>
+                                    <li>Owner(s) responsible for business’s debts</li>
+                                    <li>Often large chains selling in many countries</li>
+                                    <li>Owned by just one or a few people</li>
+                                    <li>No legal separation between owner and business</li>
+                                    <li>Limited liability</li>
+                                </ol>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer  
+                                    </button>
+                                    <p class="notvisible"><strong>B,D,E</strong></p>
+                                </div>
+
+                               
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Features of a sole trader</strong></p>
+                                <ul>
+                                    <li>Only one owner (but can employ other people)</li>
+                                    <li>Unlimited liability (responsible for the repayment of all a business&rsquo;s
+                                        debt)</li>
+                                    <li>Unincorporated so no legal distinction between business and owner</li>
+                                    <li>Usually a small business.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Advantages of being a sole trader</strong></p>
+                                <ul>
+                                    <li>It is quick, easy and inexpensive to set up as a sole trader</li>
+                                    <li>The ongoing administration costs are low</li>
+                                    <li>The owner keeps all of the profit made</li>
+                                    <li>The owner is in complete control of the business</li>
+                                    <li>Financial information does not have to be published.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Disadvantages of being a sole trader</strong></p>
+                                <ul>
+                                    <li>Sole traders have unlimited liability</li>
+                                    <li>It can be more difficult to raise finance</li>
+                                    <li>The owner has to make all the decisions, which might be stressful</li>
+                                    <li>The owner will often have to work long hours</li>
+                                    <li>Lack of continuity: when the owner dies, the business ceases.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Student work 1</h2>
+
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson5_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r6a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4><strong>Benefits of partnerships</strong></h4>
+                                <p><strong>A partnership </strong><strong>is a business with unlimited liability that is
+                                        owned by between 2 and 20 people who work together to manage a business, making
+                                        decisions and sharing the profits (or losses between) themselves</strong></p>
+                                <p><strong>Benefits of partnership compared to sole trader status</strong></p>
+                                <ul>
+                                    <li>partners can share the workload</li>
+                                    <li>partners share decision-making</li>
+                                    <li>partners can specialise</li>
+                                    <li>partners can all contribute money to make it easier to expand the business.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Which of these are disadvantages for a partnership but not for a sole
+                                        trader?</strong></p>
+                                <table width="601">
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>A</strong> There may be no one to
+                                                    help with difficult business decisions</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>D</strong> Relatively quick and easy
+                                                    to set up and run</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>G</strong> Profits have to be shared
+                                                    between all owners</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>B</strong> It can be more difficult
+                                                    to raise finance</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>E</strong> Owners get to keep all
+                                                    the profit themselves</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>H</strong> Disagreements between
+                                                    owners can lead to disputes</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>C</strong> Partners are bound by the
+                                                    majority decision of all partners, even if they disagree</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>F</strong> Lack of continuity, if an
+                                                    owner dies the business will cease to exist</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>I</strong> Partners can each
+                                                    specialise in an area they have experience in</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>&nbsp;</p>
+
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer  
+                                    </button>
+                                    <p class="notvisible"><strong>C, G, H</strong></p>
+                                </div>
+
+
+
+                               
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Student work 2</h2>
+
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson5_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Student work 2</h2>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <h4><strong>Question 3</strong></h4>
+                        <p><strong>Setting up a business &ndash; key points to cover</strong></p>
+                        <p>&nbsp;</p>
+                        <ul>
+                            <li>Name and overview of what the business does.</li>
+                            <li>Which form of legal structure (ownership) the business will have.</li>
+                            <li>Three key objectives of the business/its owners.</li>
+                            <li>Three reasons why you have chosen that form of ownership (which relate
+                                specifically to you or the business itself).</li>
+                            <li>Three specific disadvantages of your chosen form of ownership (again explaining
+                                why each is relevant to your particular business) and how you plan to overcome
+                                them.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; An example answer (sole trader):</p>
+                        <ul>
+                            <li>My business is called Top Tips and will be a nail</li>
+                            <li>The business will be a sole trader, owned and run by me.</li>
+                            <li>The main objectives are to survive the first six &nbsp;months after
+                                opening and then make a profit of at least &pound;10,000 in the
+                                remainder of the year. The business will also have the objective of
+                                having at least 250 different customers registered onto the database by
+                                the end of the first year.</li>
+                            <li>Top Tips will be a sole trader because:
+                                <ul class-="square">
+                                    <li>I will be in business on my own and am confident running a
+                                        business as I have previously operated a hair salon (so I do not
+                                        need any partners.)</li>
+                                    <li>My business will not run up many debts (paying the majority of
+                                        bills upfront). So the risk of having unlimited liability should
+                                        not be too high.</li>
+                                    <li>I will be able to keep all of the business's profits and do not
+                                        need specialist advice from anyone else. This also gives me the
+                                        flexibility to hire additional staff when customers have
+                                        sufficient interest &nbsp;to merit having more staff.</li>
+                                    <li>I do not want to involve another owner in decision-making
+                                        because I think it could lead to disagreements and mean that it
+                                        takes too long to make decisions.</li>
+                                </ul>
+                            </li>
+                            <li>I understand that the following disadvantages of being a sole trader
+                                could affect Top Tips:
+                                <ul class-="square">
+                                    <li>It may be difficult for me to find enough cash for a deposit on
+                                        a salon and to buy the equipment I need because I will not have
+                                        any other partners who are willing to put money into the
+                                        business. (I plan to use my savings to resolve this issue.)</li>
+                                    <li>If the business becomes bankrupt, I will have to repay any debts
+                                        the business has myself and could lose my family home. (I do not
+                                        think losing my home is likely as once the business is running,
+                                        I will not have many costs &ndash; just the rent, which I will
+                                        pay in advance out of my personal savings.)</li>
+                                    <li>If I wanted to expand into providing another product or service
+                                        (such as facial treatments), I do not have any expertise
+                                        &nbsp;so this might&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;be difficult
+                                        without a partner who knows about that aspect of business.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>An example answer (partnership):</p>
+                        <ul>
+                            <li>Our business is called King &amp; Ormsby and will be a small accountancy
+                                company.</li>
+                            <li>The company will be a partnership with two partners, owned and run by me
+                                and a friend, who are both qualified accountants.</li>
+                            <li>The main objectives are to grow the business so that we can both earn
+                                more personal income than we did when we were employed by large
+                                accountancy companies. The business will also have the objective of
+                                having at least &pound;200,000 in sales after the first year.</li>
+                            <li>King &amp; Ormsby will be a partnership because:
+                                <ul class-="square">
+                                    <li>The business will not take large amounts of risk &nbsp;and so
+                                        does not need to have limited liability. We are also insured
+                                        against any losses.</li>
+                                    <li>We chose a partnership because we both specialise in different
+                                        aspects of accounting and want to appeal to clients who may need
+                                        a range of services.</li>
+                                    <li>We want to be able to keep all of the profits (shared 50/50)
+                                        rather than work for a company that keeps most of the income we
+                                        earn to cover its overheads and then makes a large profit based
+                                        on our work. We do not feel we need so much administrative
+                                        support and could run our company more efficiently.</li>
+                                    <li>Having another partner will be useful for us both to have a
+                                        trusted and knowledgeable person to discuss difficult business
+                                        decisions with.</li>
+                                </ul>
+                            </li>
+                            <li>I understand that the following disadvantages of being a partnership
+                                could affect King &amp; Ormsby:
+                                <ul class-="square">
+                                    <li>We do not have large levels of personal savings and so will have
+                                        to borrow to start the company, and this could be difficult as a
+                                        partnership because we do not have much collateral to offer
+                                        lenders so may not be able to raise sufficient money to rent
+                                        premises, carry out marketing etc.</li>
+                                    <li>If the business becomes bankrupt, we will have to repay any
+                                        debts the business has, and so could become personally indebted.
+                                        This could also affect our ability to borrow in the future and
+                                        start other businesses and damage our reputation as good
+                                        financial managers or advisers.</li>
+                                    <li>Becoming a limited company might persuade some larger clients
+                                        that we are a reputable business; however, we plan to work with
+                                        smaller organisations and offer them better value for money so
+                                        we have chosen to run the lowest cost form of ownership to
+                                        support this aim.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    <div class="resource" id="resource9">
+        <h2 id="r9">Challenge</h2>
+        <div class="accordionItem question">
+            <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                <span>Question</span></button>
+            <div class="accbody">
+                <h4><strong>Question 4</strong></h4>
+                <p><strong>Deeds of partnership</strong></p>
+                <ul>
+                    <li>Complete these <strong>Student Book</strong> tasks:</li>
+                </ul>
+                <p><strong>a</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Read the
+                    case study &lsquo;Kisuli, Okuma and Owino&rsquo; on p. 22.</p>
+                <p><strong>b</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Answer
+                    case study question 1 at the top of p. 23.</p>
+                <p><strong>c</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Read the
+                    information at the bottom of p. 21 about deeds of partnership.</p>
+                <ul>
+                    <li>Produce a partnership deed for Kisuli, Okumu and Owino&rsquo;s business. Ensure the deed of
+                        partnership covers:</li>
+                    <li>all of the points listed on p. 21 of the <strong>Student Book</strong></li>
+                </ul>
+                <p>any other elements that you think would be helpful to the owners in running their business without
+                    disputes.</p>
+
+            </div>
+        </div>
+    
+
+        <div class="accordionItem solution">
+            <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                <span>Solution</span></button>
+            <div class="accbody">
+                <ol>
+                    <li><strong>b </strong>A deed of partnership may be helpful because it sets out an agreement between
+                        partners so that they all know what has been agreed about how the partnership will function.
+                        This can be referred to in the event of disagreements so they can be resolved quickly. The deed
+                        will act as a set of &lsquo;rules&rsquo; so that each partner knows what they can expect of the
+                        others and what is expected of them.</li>
+                    <li>Example answer</li>
+                </ol>
+                <p><strong>Deed of partnership ‒ Kisuli, Okumu and Owino</strong></p>
+                <ol>
+                    <li>Each partner will contribute KES 2m to provide finance to start the business.</li>
+                    <li>Profits and losses will be shared equally between the owners because they all contributed
+                        the same amount of money to start it up and will all work full-time in the business.</li>
+                    <li>The partnership can be dissolved if any of the three partners requests this in writing,
+                        giving three months&rsquo; notice. Should this happen, the partners will seek two
+                        independent valuations of the business&rsquo;s assets, and an average valuation will be
+                        taken of those two. The partners will each share that value equally once the business has
+                        either been sold to another company or the assets sold off to raise money.</li>
+                    <li>Each partner will have one vote on important decisions and majority decision-making will be
+                        respected.</li>
+                </ol>
+                <p>If &nbsp;all three partners agree to admit a new partner, this will be allowed (although each
+                    owner will have a veto if they do not approve the person recommended by any other partner). The
+                    value of the business will be agreed (as in point 3 above), and the new partner will be expected
+                    to contribute capital equivalent to one-third of that value.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="resource" id="resource10">
+        <h2 id="r10">Homework</h2>
+        <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson5_Homework.docx">Homework sheet</a>
+        <br /><br />
+    </div>
+
+    <div class="resource" id="resource11">
+        <h2 id="r11">Alternative starter</h2>
+        <div class="slideshowContainer" id="r11a">
+            <div class="fullScrnHeader"></div>
+            <div class="expholder">
+                <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+            </div>
+            <div class="slider">
+                <button class="prev disabled" disabled=""></button>
+                <div class="slideItems">
+                    <div class="slideItem active">
+                        <h4><strong>Questions 5 and 6</strong></h4>
+                        <p><strong>5&nbsp;</strong> &nbsp; &nbsp;Use the information in the table to calculate the
+                            business&rsquo;s:</p>
+                        <p><strong>&nbsp; &nbsp; &nbsp;a&nbsp; &nbsp; &nbsp;&nbsp;</strong>Average revenue between 2020
+                            and 2022</p>
+                        <p><strong>&nbsp; </strong>&nbsp; &nbsp;b<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>Average
+                            profit between 2020 and 2022</p>
+                        <table width="601">
+                            <tbody>
+                                <tr>
+                                    <td width="143">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>2020</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>2021</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>2022</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="143">
+                                        <p>Total revenue (&pound;)</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>132,500</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>134,000</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>147,500</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="143">
+                                        <p>Total costs (&pound;)</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>47,500</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>46,000</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>52,500</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+
+                        <div class="hint qHint">
+                            <button class="btn" type="button">
+                                Answer
+                            </button>
+                            <p class="notvisible">\(\mathbf5\boldsymbol\;\boldsymbol\;\boldsymbol\;\boldsymbol\;\boldsymbol\;\mathbf
+                                a\;\;\;\;\;\;\frac{(£132,500+£134,000+£147500)}3\;\;\;=£138,000\)</p>
+                        </div>
+
+
+
+                        <div class="hint qHint">
+                            <button class="btn" type="button">
+                                Answer 
+                            </button>
+                            <span class="notvisible">
+                                <p>\(\mathbf5\boldsymbol\;\boldsymbol\;\boldsymbol\;\boldsymbol\;\boldsymbol\;\mathbf
+                                    b\boldsymbol\;\;\;\;\;\;\;\frac{(£132,500-£47,500)+(£134,000-£46,000)+(£147,500-£52500)}3\)
+                                </p>
+                                <p>\(=\;\frac{£85,000+£88,000+£95,000}3=\frac{£268,000}3\)</p>
+                                <p>\(\)=£89,333.33</p>
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <div class="slideItem">
+                        <p><strong>6</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Calculate the percentage change in total revenue, total cost and profit between 2020 and
+                            2022.</p>
+                        <table width="601">
+                            <tbody>
+                                <tr>
+                                    <td width="143">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>2020</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>2021</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>2022</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="143">
+                                        <p>Total revenue (&pound;)</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>132,500</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>134,000</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>147,500</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="143">
+                                        <p>Total costs (&pound;)</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>47,500</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>46,000</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>52,500</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="143">
+                                        <p>Profit (&pound;)</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>&pound;85,000</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>&pound;88,000</p>
+                                    </td>
+                                    <td width="153">
+                                        <p>&pound;95,000</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+
+                        <div class="hint qHint">
+                            <button class="btn" type="button">
+                                Answer  
+                            </button>
+                            <span class="notvisible">
+                                <p>\(\mathbf6\boldsymbol\;\mathrm{TR}=\frac{(147500-132500)}{132500}\times100=11.32\%\)
+                                </p>
+                                <p>\(TC=\frac{(52500-47500)}{47500}\times100=10.53\%\)</p>
+                                <P>\(\mathrm{Profit}=\frac{(95500-85000)}{85000}\times100=11.76\%\)</P>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="next disabled" disabled=""></button>
+            </div>
+            <div class="indicators">
+                <div class="slideno"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="resource" id="resource12">
+        <h2 id="r12">Alternative end-of-lesson activity</h2>
+        <div class="slideshowContainer" id="r12a">
+            <div class="fullScrnHeader"></div>
+            <div class="expholder">
+                <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+            </div>
+            <div class="slider">
+                <button class="prev disabled" disabled=""></button>
+                <div class="slideItems">
+                    <div class="slideItem active">
+                        <h4><strong>Questions 7 to 9</strong></h4>
+                        <p><strong>7</strong> Which of the following is a feature of a sole trader?</p>
+                        
+                            <P><strong>A</strong>  Between 2 and 20 owners</P>
+                            <P><strong>B</strong>  Shared decision-making</P>
+                            <P><strong>C</strong>  Limited liability for the owners</P>
+                            <P><strong>D</strong>  Does not have to publish financial results</P>
+
+                     
+                            <div class="hint qHint">
+                                <button class="btn" type="button">
+                                    Answer 
+                                </button>
+                                <p class="notvisible"><strong>D</strong></p>
+                            </div>
+
+
+                    </div>
+                    <div class="slideItem">
+                        <p><strong>8</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Which of the following is an advantage of being a partnership?</p>
+                      
+                            <p><strong>A</strong>  Support for decision-making compared to a sole trader</p>
+                            <p><strong>B</strong>  More capital can be raised than as a public limited company</p>
+                            <p><strong>C</strong>  Unlimited liability for the owners</p>
+                            <p><strong>D</strong>  The partnership will automatically cease if an owner dies</p>
+                        
+                            <div class="hint qHint">
+                                <button class="btn" type="button">
+                                    Answer 
+                                </button>
+                                <p class="notvisible"><strong>A</strong></p>
+                            </div>
+
+
+                    </div>
+
+                    <div class="slideItem">
+                        <p><strong>9</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Which of the following is a disadvantage of being a partnership?</p>
+                      
+                            <p><strong>A</strong>  More people to contribute finance</p>
+                            <p><strong>B</strong> Have to agree a deed of partnership</p>
+                            <p><strong>C</strong> Disputes more likely than sole traders</p>
+                            <p><strong>D</strong> Can focus on different areas of expertise.</p>
+                        </ol>
+
+                        <div class="hint qHint">
+                            <button class="btn" type="button">
+                                Answer  
+                            </button>
+                            <p class="notvisible"><strong>c</strong></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <button class="next disabled" disabled=""></button>
+            </div>
+            <div class="indicators">
+                <div class="slideno"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="resource" id="resource13">
+        <h2 id="r13">Answers</h2>
+       
+        <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson5_Answers.docx">Answer
+            sheet</a>
+    </div>
+    </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

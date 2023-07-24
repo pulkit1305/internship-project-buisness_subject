@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 7 | Resources</span>
+                <span class="lname">Public Limited Companies</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Subject vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r3">Slideshow: General vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r4">Question 1</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r5">Slideshow: Key features of PLCs</button>
+                <button type="button" class="btn yl resr" data-id="r6">Worksheet 1</button>
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r7">Slideshow: Advantaged and disadvantages</button>
+                <button type="button" class="btn yl resr" data-id="r8">Worksheet 2</button>
+
+                <h2>Homework</h2>
+                <button type="button" class="btn yl resr" data-id="r9">Homework sheet</button>
+
+                <h2>Alternative end-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Questions 2 to 4</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r11">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul>
+                                    <li>understand the main business characteristics of public limited companies linked
+                                        to size</li>
+                                    <li>examine the most appropriate form of ownership for different types of business.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Subject vocabulary</h2>
+                                <ul>
+                                    <li><strong>public limited company: </strong>a limited company in which shares can
+                                        be sold to the general public and traded on a stock exchange</li>
+                                    <li><strong>stock market flotation: </strong>when a private limited company first
+                                        makes its shares available for the public to buy on the stock exchange (this
+                                        means it becomes a public limited company)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 id="r3">&nbsp;</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>General vocabulary</h2>
+                                <ul>
+                                    <li><strong>going public:</strong> the process of changing from a private limited
+                                        company to a public limited company. This is sometimes called
+                                        &lsquo;flotation&rsquo;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource4">
+                <h2 id="r4">Starter</h2>
+                <h4>Question 1</h4>
+                <div class="accordionItem question">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <ol>
+                            <li>Which of the following features do you associate with a private limited company?</li>
+                        </ol>
+                        <table width="601">
+                            <tbody>
+                                <tr>
+                                    <td width="189">
+                                        <p><strong>A </strong>Only one owner</p>
+                                    </td>
+                                    <td width="198">
+                                        <p><strong>B </strong>Easier to attract investment</p>
+                                    </td>
+                                    <td width="214">
+                                        <p><strong>C </strong>Owners have to pay all business&rsquo;s debts if its goes
+                                            bankrupt</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="189">
+                                        <p><strong>D </strong>Owners are shareholders</p>
+                                    </td>
+                                    <td width="198">
+                                        <p><strong>E </strong>Owners elect directors</p>
+                                    </td>
+                                    <td width="214">
+                                        <p><strong>F </strong>Set up using partnership agreement</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="189">
+                                        <p><strong>G </strong>Owners pay income tax on profits</p>
+                                    </td>
+                                    <td width="198">
+                                        <p><strong>H </strong>Business has a separate legal entity to the owner(s)</p>
+                                    </td>
+                                    <td width="214">
+                                        <p><strong>I </strong>No legal set-up requirements</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="189">
+                                        <p><strong>J </strong>Small companies only</p>
+                                    </td>
+                                    <td width="198">
+                                        <p><strong>K </strong>Range from small to very large</p>
+                                    </td>
+                                    <td width="214">
+                                        <p><strong>L </strong>Owners pay corporation tax on profits</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+                        <ol>
+                            <li><strong>B</strong>, <strong>D</strong>, <strong>E</strong>, <strong>H</strong>,
+                                <strong>K</strong>, <strong>L</strong>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r5a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>Key features of PLCs</h3>
+                                <p><strong>Think, pair, share</strong></p>
+                                <p>Think: Why are almost all of the biggest companies public limited companies (plcs)?
+                                </p>
+                                <p>Pair: Discuss your answers with a partner.</p>
+                                <p>Share: Be ready to explain your answers and reasons to the class.</p>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Features of a public limited company (plc)</strong></p>
+                                <ul>
+                                    <li>Shares bought and sold on the stock market</li>
+                                    <li>Able to raise large amounts of money when they go public</li>
+                                    <li>Shareholders can re-sell shares to anyone else</li>
+                                    <li>Company has to publish detailed reports about financial performance</li>
+                                    <li>Reports must be audited (checked) by a qualified, independent accountant</li>
+                                    <li>Shareholders give day-to-day responsibility for running the company to a board
+                                        of directors</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Question:</strong> The process of changing from a private limited company to
+                                    a public limited company is called a &lsquo;flotation&rsquo;, or &lsquo;going
+                                    public&rsquo;.</p>
+                                <p>True or false?</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">True</p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Question:</strong> Public limited companies are owned by private shareholders
+                                    and not by the government.</p>
+                                <p>True or false?</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">True</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Student work 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson7_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r7a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Advantages and disadvantages</h2>
+                                <p>Worksheet 1, Question 2</p>
+                                <p>&lsquo;Continuity on owner&rsquo;s death&rsquo; (1b) &ndash; a feature of both
+                                    private limited companies and public limited companies.</p>
+                                <ul>
+                                    <li>There is a separation between the shareholder and the company. Any owner who
+                                        dies can leave their shares to a friend or family member who then takes over
+                                        that part of the ownership.</li>
+                                    <li>The company can then carry on unaffected, because the same number of shares is
+                                        still owned &ndash; just by different people.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p>&lsquo;Ownership of shares can be controlled&rsquo; (1e) &ndash; a feature of a
+                                    private limited company</p>
+                                <ul>
+                                    <li>The shares of plcs are traded openly (to the public) on a stock exchange.</li>
+                                    <li>Any owner can sell their shares without having to ask permission from anyone
+                                        else.</li>
+                                    <li>This will allow new owners to gain ownership regardless of other owners&rsquo;
+                                        wishes &ndash; provided they pay to buy at least one share.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p>&lsquo;Potentially vulnerable to takeovers&rsquo; (1f) &ndash; a feature of a public
+                                    limited company</p>
+                                <ul>
+                                    <li>If original founders decide to keep some shares themselves when they
+                                        &lsquo;float&rsquo; the company, they are still very unlikely to own a majority
+                                        of the shares.</li>
+                                    <li>They cannot control what happens to the remaining shares.</li>
+                                    <li>If investors or companies buy enough shares (which all have an equal voting
+                                        &lsquo;right&rsquo;) then decisions can be controlled by them rather than the
+                                        original founders and shareholders.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p>Worksheet 1, Question 3</p>
+                                <ul>
+                                    <li>It would not be suitable to sell shares via owners &lsquo;pitching&rsquo; to a
+                                        few investors because they would not be able to raise enough money in this small
+                                        way.</li>
+                                    <li>There are legal requirements involved in a stock market flotation.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Question:</strong> Decide whether these features are advantages or
+                                    disadvantages of being a<strong>
+                                        public</strong> limited company.</p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="151">
+                                                <p>a Limited liability for the owners</p>
+                                            </td>
+                                            <td width="170">
+                                                <p>b May have high profile in the media</p>
+                                            </td>
+                                            <td width="217">
+                                                <p>c Have to share profits with many thousands of other shareholders</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="151">
+                                                <p>d Expensive to set up this form of company ownership</p>
+                                            </td>
+                                            <td width="170">
+                                                <p>e Companies may enjoy some degree of market power (e.g. price setting
+                                                    power)</p>
+                                            </td>
+                                            <td width="217">
+                                                <p>f Managers may run the company in their own interests rather than
+                                                    shareholders&rsquo; interests</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="151">
+                                                <p>g High ongoing administration costs</p>
+                                            </td>
+                                            <td width="170">
+                                                <p>h Vulnerable to takeovers</p>
+                                            </td>
+                                            <td width="217">
+                                                <p>i Can raise very large amounts of share capital</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="151">
+                                                <p>j Companies may experience economies of scale</p>
+                                            </td>
+                                            <td width="170">
+                                                <p>k Lots of financial information available to competitors/customers
+                                                </p>
+                                            </td>
+                                            <td width="217">
+                                                <p>l Shareholders cannot control who else buys shares and therefore some
+                                                    control of the company</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Advantages of being a public limited company</strong></p>
+                                <ol>
+                                    <li>Limited liability for the owners</li>
+                                    <li>May have high profile in the media</li>
+                                    <li>Companies may enjoy some degree of market power (e.g. price setting power)</li>
+                                    <li>Can raise very large amounts of share capital</li>
+                                    <li>Companies may experience economies of scale</li>
+                                </ol>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Disadvantages of being a public limited company</strong></p>
+                                <ol>
+                                    <li>Have to share profits with many thousands of other shareholders</li>
+                                    <li>Expensive to set up this form of company ownership</li>
+                                    <li>Managers may run the company in their own interests rather than
+                                        shareholders&rsquo; interests</li>
+                                    <li>High on-going administration costs</li>
+                                    <li>Vulnerable to takeovers</li>
+                                    <li>Lots of financial information available to competitors/customers</li>
+                                    <li>Shareholders cannot control who else buys shares and therefore some control of
+                                        the company</li>
+                                </ol>
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson7_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Alternative end-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r9a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Questions 2 to 4</h2>
+                                <ol>
+                                    <li>When a company first makes its shares available for purchase on a stock market
+                                        it is known as</li>
+                                </ol>
+
+                                <ol>
+                                    <li>Underwriting</li>
+                                    <li>Flotation</li>
+                                    <li>De-listing</li>
+                                    <li>Incorporation</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible"><strong>B</strong></p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <ol>
+                                    <li>Which of the following is a disadvantage of being a plc?</li>
+                                </ol>
+                                <ol>
+                                    <li>Difficult to raise finance</li>
+                                    <li>Owners may struggle to cope with workload</li>
+                                    <li>Difficult to retain full control</li>
+                                    <li>Shareholders have limited liability</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible"><strong>C</strong></p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <ol>
+                                    <li>Which of the following is <strong>not</strong> a feature of a public limited
+                                        company?</li>
+                                </ol>
+                                <ol>
+                                    <li>Limited liability for the owners</li>
+                                    <li>Managed by appointed directors</li>
+                                    <li>Able to raise a lot of share capital</li>
+                                    <li>Auditors must verify published accounts</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible"><strong>D</strong></p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="resource" id="resource10">
+                <h2 id="r10">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson7_Answers.docx">Answer sheet</a>
+            </div>
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

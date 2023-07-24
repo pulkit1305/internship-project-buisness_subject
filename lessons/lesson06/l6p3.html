@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 6 | Resources</span>
+                <span class="lname">Public Limited Companies</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Key definitions</button>
+                <button type="button" class="btn yl resr" data-id="r3">Slideshow: Questions 1 and 2</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: The features of a private limited
+                    company</button>
+                <button type="button" class="btn yl resr" data-id="r5">Slideshow: Task 1</button>
+                <button type="button" class="btn yl resr" data-id="r6">Slideshow: Task 2</button>
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r7">Slideshow: Advantages and disadvantages of
+                    private limited companies</button>
+                <button type="button" class="btn yl resr" data-id="r8">Worksheet 1</button>
+
+                <h2>Homework</h2>
+                <button type="button" class="btn yl resr" data-id="r9">Homework sheet</button>
+
+                <h2>Alternative starter</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Question 3</button>
+
+                <h2>Alternative end-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r11">Worksheet 2</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r12">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Learning objectives</h4>
+                                <p>In this lesson, students will learn to understand the key features and the
+                                    (dis)advantages of private limited company status.</p>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+                                <h2>Key definitions</h2>
+                                <ul>
+                                    <li><strong>limited companies:</strong> business organisations that have a separate
+                                        legal identity to their owners</li>
+                                    <li><strong>limited liability:</strong> shareholders&rsquo; losses are limited to
+                                        the amount of capital they have invested in the business</li>
+                                    <li><strong>private limited company:</strong> a limited company in which shares
+                                        cannot be sold to the general public and share ownership can be restricted</li>
+                                    <li><strong>public limited company:</strong> a limited company in which shares can
+                                        be sold to the general public and traded on a stock exchange</li>
+                                    <li><strong>shareholders:</strong> the owners of limited companies</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource3">
+                <h2 id="r3">Starter</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Questions 1 and 2</h2>
+                                <ol>
+                                    <li>Choose words or phrases from the word bank to complete the following passage.
+                                    </li>
+                                    <p>A sole trader is a legal structure of business in which __________ legal
+                                        separation
+                                        between the business and the owner. This means that the owner has __________
+                                        liability. As a result, the owner may have to sell personal possessions to clear
+                                        the
+                                        debts of the business if the business fails. Sole traders are usually __________
+                                        businesses that can give personal service to their customers. It is easy and
+                                        __________ to set up as a sole trader, although it can be difficult to raise
+                                        finance.</p>
+                                </ol>
+
+
+                                <p style="padding-left: 50px;">there is; there is no; limited; unlimited; small; large;
+                                    expensive; inexpensive</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">A sole trader is a legal structure
+                                        of business in which <strong>there is no</strong>
+                                        legal separation between the business and the owner. This means that the owner
+                                        has
+                                        <strong>unlimited</strong> liability. As a result, the owner may have to sell
+                                        personal possessions to clear the debts of the business if the business fails.
+                                        Sole
+                                        traders are usually <strong>small</strong> businesses that can give personal
+                                        service
+                                        to their customers. It is easy and <strong>inexpensive</strong> to set up as a
+                                        sole
+                                        trader, although it can be difficult to raise finance.
+                                    </p>
+                                </div>
+
+
+                            </div>
+                            <div class="slideItem">
+                                <ol start="2">
+                                    <li>Choose words or phrases from the word back to complete the following passage.
+                                    </li>
+                                    <p>A partnership is a legal structure of business that usually has __________.
+                                        Partnerships are often found in professions such as accountancy and legal
+                                        services.
+                                        The partners have __________ so are personally liable for the debts of the
+                                        business.
+                                        A partnership might find it __________ to raise finance than a sole trader
+                                        because
+                                        there are __________ owners who can contribute capital. Furthermore, a
+                                        partnership
+                                        can benefit from specialisation as each partner can focus on a particular aspect
+                                        of
+                                        the business.</p>
+                                </ol>
+
+                                <p style="padding-left: 50px;">2‒20 owners; one owner; limited liability; unlimited
+                                    liability; easier; harder;
+                                    fewer; more</p>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible" style="padding-left: 50px;">A partnership is a legal structure
+                                        of business that usually has <strong>2&ndash;20
+                                            owners</strong>. Partnerships are often found in professions such as
+                                        accountancy
+                                        and legal services. The partners have <strong>unlimited liability</strong> so
+                                        are
+                                        personally liable for the debts of the business. A partnership might find it
+                                        <strong>easier</strong> to raise finance than a sole trader because there are
+                                        <strong>more</strong> owners who can contribute capital. Furthermore, a
+                                        partnership
+                                        can benefit from specialisation as each partner can focus on a particular aspect
+                                        of
+                                        the business.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="resource" id="resource4">
+                <h2 id="r4">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>The features of a private limited company</h2>
+
+                                <p><strong>Limited liability companies</strong></p>
+                                <ul>
+                                    <li>Limited liability companies have unlimited liability</li>
+                                    <li>This means the owners are not responsible for the debts of the company</li>
+                                    <li>The owners have a separate legal identity to the business</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Private limited companies &ndash; key features</strong></p>
+                                <ul>
+                                    <li>Referred to as &lsquo;limited' &ndash; usually shortened to ltd</li>
+                                    <li>Owned by one or more<strong> shareholders</strong></li>
+                                    <li>Shareholders make all the important decisions</li>
+                                    <li>In small ltds shareholders manage the business on a day-to-day basis</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">
+                                                <p><strong>Sole trader</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>Private limited company</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Unlimited liability</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Owned by shareholders</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Business has a separate legal entity</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Easy to set up</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p>Lack of continuity on owner&rsquo;s death</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">Sole trader: Unlimited liability; easy to set up; lack of
+                                        continuity on owner&rsquo;s death<br><br>Private limited company: owner by
+                                        shareholders; business has a separate legal entity</p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Private limited companies &ndash; key information</strong></p>
+                                <ul>
+                                    <li>Owners can sell shares in the company to help raise money to start or grow the
+                                        company</li>
+                                    <li>Shareholders (owners) choose directors to run the company for them, but can do
+                                        the role themselves</li>
+                                    <li>Private limited companies must pay corporation tax on the profits they earn</li>
+                                    <li>Private limited companies must complete a formal set-up process when they become
+                                        incorporated</li>
+                                </ul>
+                            </div>
+
+                            <div class="slideItem">
+                                <p><strong>Forming a private limited company</strong></p>
+                                <p>The documents that need to be completed are:</p>
+                                <ul>
+                                    <li><strong>Memorandum of Association</strong>: Provides information about the
+                                        business and what its main activities will be</li>
+                                    <li><strong>Articles of Association</strong>: Contains information about how the
+                                        company will be run (voting rights etc.)</li>
+                                </ul>
+                            </div>
+
+                            <div class="slideItem">
+                                <p>Which three of the following is it necessary to send to the registrar of companies in
+                                    order to establish a private limited company?</p>
+                                <ol>
+                                    <li>A tax return</li>
+                                    <li>VAT registration</li>
+                                    <li>Memorandum of association</li>
+                                    <li>Articles of associations</li>
+                                    <li>A fee</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer 1
+                                    </button>
+                                    <p class="notvisible">C</p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer 2
+                                    </button>
+                                    <p class="notvisible">D</p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer 3
+                                    </button>
+                                    <p class="notvisible">E</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Student work 1</h2>
+                <div class="slideshowContainer" id="r5a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+                                <h2>Task 1</h2>
+
+                                <p><strong>Task 1:</strong> Prepare a &lsquo;sales pitch&rsquo; for your
+                                    business.</p>
+                                <p>Cover all of the following points, plus any other details you think will be
+                                    persuasive. Remember to keep your text concise.</p>
+                                <ul>
+                                    <li>Business name, overview of what the business does and the current form
+                                        of ownership</li>
+                                    <li>Three key initial objectives of the business</li>
+                                    <li>What your product is and who you will sell it to (for example, school
+                                        students, families, businesses which need IT services, etc.)</li>
+                                    <li>Three key reasons why your business is a good investment opportunity for
+                                        new shareholders</li>
+                                    <li>How much total investment you are seeking and how many new shareholders
+                                        you would ideally want</li>
+                                    <li>How much investors are likely to receive back and why you think you can
+                                        promise this amount.</li>
+                                </ul>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Example answer
+                                    </button>
+                                    <p>An example sales pitch:</p>
+                                    <ul>
+                                        <li>Top Tips - an &lsquo;up-market&rsquo; nail and manicure salon,
+                                            providing those services to a wealthy set of customers in the
+                                            business district. A sole trader looking to become a ltd.</li>
+                                        <li>Three key initial objectives of the business: Attract &pound;60,000
+                                            of initial investment before launch, make a profit of &pound;150,000
+                                            in the first year, expand sales by opening five more salons within 3
+                                            years</li>
+                                        <li>Top Tips provides nailcare, extensions and manicure treatments to
+                                            wealthy businesspeople who want to be pampered in their lunch hour
+                                            or by appointment to visit their offices</li>
+                                        <li>This is a unique investment opportunity because we target
+                                            high-earners specifically, offer a &lsquo;home-visit&rsquo; service
+                                            as well and all technicians are fully qualified</li>
+                                        <li>New investors are sought to help finance the initial launch of the
+                                            business and then to expand it quickly into the two other largest
+                                            cities in the country. Investors will become shareholders, entitled
+                                            to equal shares of the profits with the current and new owners</li>
+                                        <li>The figures in the objectives above are part of the company&rsquo;s
+                                            business plan which has convinced a major bank to lend us
+                                            &pound;50,000 if we can attract &pound;90,000 of additional
+                                            investment</li>
+                                        <li>We are seeking up to five new investors to invest &pound;20,000
+                                            each. This would entitle each new owner to a 5% share of the
+                                            business and if we hit our profit target for year 1 they would
+                                            immediately have received 37.5% of their initial investment back by
+                                            this point.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Student work 1</h2>
+                <div class="slideshowContainer" id="r6a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+                                <h2>Task 2</h2>
+
+                                <p><strong>Task 2: </strong>Your elevator pitch</p>
+                                <ol>
+                                    <li>You have &pound;20,000 to invest.</li>
+                                    <li>You need to decide if you want to invest in any of the companies whose sales
+                                        pitch is on the board. You may not touch the board or the sticky notes.</li>
+                                    <li>You will only have 1 minute to view the investment opportunities so you may need
+                                        to scan the pitches rather than read them fully.</li>
+                                    <li>You may invest in two companies but will need to split your &pound;20,000
+                                        between them.</li>
+                                    <li><strong>Before you view the sales pitches:</strong> write down any questions you
+                                        want to ask the owners of the companies to help you decide whether to invest.
+                                    </li>
+                                    <li><strong>After you have decided which company to invest in:</strong> Update your
+                                        questions based on the specific information you now have about the companies you
+                                        have chosen.</li>
+                                </ol>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Example answer
+                                    </button>
+                                    <p>Example questions to ask the owners of the company/companies identified for
+                                        potential investment:</p>
+                                    <ul>
+                                        <li>What percentage ownership of the company will I get if I invest my full
+                                            &pound;20,000?</li>
+                                        <li>How many other owners will there be?</li>
+                                        <li>Will I be a director of the company?</li>
+                                        <li>How will decisions be taken?</li>
+                                        <li>How will we resolve any disagreements?</li>
+                                        <li>Who will be the chairperson of the company?</li>
+                                        <li>How much money will the owner(s) put into setting up the company?</li>
+                                        <li>Do all owners have equal voting rights if we find it difficult to make
+                                            certain decisions?</li>
+                                        <li>What percentage of the total profits will I be entitled to? Why?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r7a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+                                <h2>Advantages and disadvantages of private limited companies</h2>
+                                <p><strong>Advantages of being a private limited company</strong></p>
+                                <ul>
+                                    <li>Limited liability &ndash; can only lose what you invest</li>
+                                    <li>More owners to provide capital (finance)</li>
+                                    <li>Owners can control who buys shares in the company</li>
+                                    <li>Still relatively easy to set up (compared to the biggest companies)</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Disadvantages of being a private limited company</strong></p>
+                                <ul>
+                                    <li>Some cost involved in setting up</li>
+                                    <li>More owners to share profits between</li>
+                                    <li>Can be difficult to find new shareholders</li>
+                                    <li>Have to make certain information public about the company</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson7_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Homework</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson6_Homework.docx">Homework sheet</a>
+            </div>
+
+            <div class="resource" id="resource10">
+                <h2 id="r10">Alternative starter</h2>
+                <h4>Question 3</h4>
+                <div class="accordionItem question">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <ol>
+                            <li>Decide whether these features apply to sole traders, partnerships, both or neither.</li>
+                            </ol>
+                            <table width="614">
+                                <tbody>
+                                <tr>
+                                <td width="200">
+                                <p>Unlimited liability</p>
+                                </td>
+                                <td width="200">
+                                <p>Only one owner</p>
+                                </td>
+                                <td width="213">
+                                <p>Difficult to raise finance</p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="200">
+                                <p>2&ndash;20 owners</p>
+                                </td>
+                                <td width="200">
+                                <p>Incorporated company</p>
+                                </td>
+                                <td width="213">
+                                <p>Owners may have to sell personal property to repay debts</p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="200">
+                                <p>Financial information must be published</p>
+                                </td>
+                                <td width="200">
+                                <p>Can sell shares to the public</p>
+                                </td>
+                                <td width="213">
+                                <p>Deeds of partnership are required</p>
+                                </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+
+                        <table>
+                            <tbody>
+                            <tr>
+                            <td width="150">
+                            <p><strong>Sole traders</strong></p>
+                            </td>
+                            <td width="150">
+                            <p><strong>Partnerships</strong></p>
+                            </td>
+                            <td width="150">
+                            <p><strong>Both</strong></p>
+                            </td>
+                            <td width="150">
+                            <p><strong>Neither</strong></p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="150">
+                            <p>Only one owner</p>
+                            </td>
+                            <td width="150">
+                            <p>2&ndash;20 owners</p>
+                            </td>
+                            <td width="150">
+                            <p>Unlimited liability</p>
+                            </td>
+                            <td width="150">
+                            <p>Financial information must be published</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="150">
+                            <p>Difficult to raise finance</p>
+                            </td>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">
+                            <p>Owners may have to sell personal property to repay debts</p>
+                            </td>
+                            <td width="150">
+                            <p>Can sell shares to the public</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">
+                            <p>Incorporated company</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">&nbsp;</td>
+                            <td width="150">
+                            <p>Deeds of partnership are required</p>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="resource" id="resource11">
+                <h2 id="r11">Alternative end-of-lesson activity</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson6_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+            
+
+
+
+            <div class="resource" id="resource12">
+                <h2 id="r12">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson6_Answers.docx">Answer sheet</a>
+            </div>
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+        .hint span.notvisible {
+            visibility: hidden;
+          }
+    </style>
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 04: Resources</span>
+                <span class="lname">Calculating Percentages and Averages</span>
+            </h1>
+        </header>
+        <main>
+
+            <h1>Resources</h1>
+            <ul>
+                <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                    please be aware that it should be reviewed before sharing with students.</li>
+            </ul>
+            <h2>Student Book</h2>
+            <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+            <h2>Starter</h2>
+            <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+            <button type="button" class="btn yl resr" data-id="r2">Slideshow: Key definitions</button>
+            <button type="button" class="btn yl resr" data-id="r3">Question 1</button>
+
+            <h2>Teaching session 1</h2>
+            <button type="button" class="btn yl resr" data-id="r4">Slideshow: Calculating percentages</button>
+            <button type="button" class="btn yl resr" data-id="r5">Worksheet 1</button>
+
+
+            <h2>Teaching session 2</h2>
+            <button type="button" class="btn yl resr" data-id="r6">Slideshow: Calculating averages</button>
+            <button type="button" class="btn yl resr" data-id="r7">Worksheet 2</button>
+
+            <h2>Challenge</h2>
+            <button type="button" class="btn yl resr" data-id="r8">Worksheet 3</button>
+
+            <h2>End-of-lesson activity</h2>
+            <button type="button" class="btn yl resr" data-id="r9">Question 2</button>
+
+
+
+            <h2>Homework</h2>
+            <button type="button" class="btn yl resr" data-id="r10">Homework sheet</button>
+
+            <h2>Alternative starter</h2>
+            <button type="button" class="btn yl resr" data-id="r11">Question 3</button>
+
+            <h2>Alternative end-of-lesson activity</h2>
+            <button type="button" class="btn yl resr" data-id="r12">Question 4</button>
+
+
+            <h2>Answers</h2>
+            <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+            <button type="button" class="btn yl resr" data-id="r13">Answer sheet</button>
+
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul>
+                                    <li>calculate percentage changes from figures given in a graph or table</li>
+                                    <li>calculate a number as a percentage of another number</li>
+                                    <li>calculate averages from figures from a graph or table.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Key definitions</h2>
+                                <ul>
+                                    <li><strong>cost of sales:</strong> costs such as raw materials and the wages of
+                                        factory workers</li>
+                                    <li><strong>expenses:</strong> costs not directly linked to output, such as rental
+                                        costs or interest paid on loans</li>
+                                    <li><strong>gross profit formula:</strong> gross profit = sales revenue &ndash; cost
+                                        of sales</li>
+                                    <li><strong>operating profit formula:</strong> operating profit = gross profit
+                                        &ndash; expenses</li>
+                                    <li><strong>labour productivity:</strong> output per worker in a given time period
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="resource" id="resource3">
+                <h2 id="r3">Starter</h2>
+                <h4 id="r3">Question 1</h4>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <p><strong>1</strong><span style="margin-left: 3%;">Work out the answers to these questions
+                                about how much profit companies <span style="margin-left: 60px;">make.</span></p>
+                        <ol class="l2">
+                            <li>One part of Green Table Group&rsquo;s business had costs of $624.2m in 2020 and those
+                                costs increased by $56.8m in 2021. How much were the costs in 2021?</li>
+                            <li>In 2021, total (sales) revenue for the entire group was $8.6bn, having increased by
+                                $832m during 2021. How much revenue had the group earned in 2020?</li>
+                            <li>Profit for the group had increased from $316.9m to &pound;330.0m between 2020 and 2021.
+                                How much had profit increased by? (You could express your answer as a $ figure or a
+                                percentage).</li>
+                        </ol>
+
+
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+                        <ol class="l2" style="margin-left: 50px;">
+                            <li>$624.2m + $56.8m = $681m</li>
+                            <li>$8,600m &ndash; $832m = $7,768m (or $7.768bn)</li>
+                            <li>$330.0m &ndash; $316.9m = $13.1m or 4.13%</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="resource" id="resource4">
+                <h2 id="r4">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Calculating percentages</h2>
+                                <p>This table is an extract from SBS Transit’s statement of comprehensive income.</p>
+                               <table width="80%" style="margin-left: 5px;">
+                                 <thead>
+                                    <th>&nbsp;</th>
+                                    <th style="text-align: left;">2019</th>
+                                    <th style="text-align: left;">2020</th>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                        <td style="text-align: left;"><strong>Revenue</strong></td>
+                                        <td style="text-align: left;">75</td>
+                                        <td style="text-align: left;">149</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;"><strong>Cost of sales</strong></td>
+                                        <td style="text-align: left;">51</td>
+                                        <td style="text-align: left;">83</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;"><strong>Gross profit</strong></td>
+                                        <td style="text-align: left;">24</td>
+                                        <td style="text-align: left;">66</td>
+                                    </tr>
+                                 </tbody>
+                               </table>
+                                <p><strong>1</strong> <span style="margin-left: 4%;">Calculate the percentage change in
+                                        revenue from 2019 to 2020.</span></p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">\(\frac{149-75}{75}\times100=98.67\%\)</p>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                            <div class="slideItem">
+                                <p>This table is an extract from SBS Transit’s statement of comprehensive income.</p>
+                                <table width="80%" style="margin-left: 5px;">
+                                    <thead>
+                                       <th>&nbsp;</th>
+                                       <th style="text-align: left;">2019</th>
+                                       <th style="text-align: left;">2020</th>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                           <td style="text-align: left;"><strong>Revenue</strong></td>
+                                           <td style="text-align: left;">75</td>
+                                           <td style="text-align: left;">149</td>
+                                       </tr>
+                                       <tr>
+                                           <td style="text-align: left;"><strong>Cost of sales</strong></td>
+                                           <td style="text-align: left;">51</td>
+                                           <td style="text-align: left;">83</td>
+                                       </tr>
+                                       <tr>
+                                           <td style="text-align: left;"><strong>Gross profit</strong></td>
+                                           <td style="text-align: left;">24</td>
+                                           <td style="text-align: left;">66</td>
+                                       </tr>
+                                    </tbody>
+                                  </table>
+                                <p><strong>2</strong><span style="margin-left: 4%;">Calculate the percentage increase in
+                                        cost of sales from 2019 to 2020.</span></p>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">Cost of sales:\(\frac{(83-51)}{51}\times100=62.75\%\)</p>
+                                </div>
+
+                                <p><strong>3</strong><span style="margin-left: 4%;">Calculate the percentage increase in
+                                        cost of sales from 2019 to 2020.</span></p>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">Gross profit:\(\frac{(66-24)}{24}\times100=175\%\)</p>
+                                </div>
+                                <br><br>
+
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>4</strong><span style="margin-left: 4%;">This figure shows the percentage
+                                        change in sales of a business over a<br> <span style="margin-left: 65px;">25-year period.</span></p>
+                                <figure class="image"
+                                    style="display:table; border:0px solid #dee2e6; max-width:100%; clear:both; margin: 0 auto;margin-left: 50px; mix-blend-mode:multiply">
+                                    <img src="assets\img\poaig_maths_l104_img01.png" width="50%;" />
+                                </figure>
+                                <p style="margin-left: 60px;">Calculate the percentage change in the rate of growth between 1995 and 2020.</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">\(\frac{(5-11)}{11}\times100=-54.55\%\)</p>
+                                </div>
+
+                            </div>
+                            <div class="slideItem">
+                                <p style="margin-left: 4%;">This table shows the sales revenue of four real-estate
+                                    agents in a town.</p>
+                                <table width="90%" style="margin-left: 50px;">
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>2019 (SGD 000s)</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>2020 (SGD 000s)</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>Wall and Ruth</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">180</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">170</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>My Moves</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">240</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">285</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>Property Climb</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">360</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">380</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>First Move</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">195</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">180</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>Total market sales</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>975</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>1015</strong></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="slideItem">
+
+                                <p><strong>Formula for calculating market share</strong> (one number as a percentage of
+                                    another)</p>
+                                <p>Market share = \(\mathrm{\frac{sales\;of\;the\;company}{Total\;market\;sales}\times100}\)</p>
+                                <p>(Answer is expressed as a percentage)</p>
+                            </div>
+                            <div class="slideItem">
+                                <p style="margin-left: 3.5%;">This table shows the sales revenue of four real-estate
+                                    agents in a town.</p>
+                                <table width="90%" style="margin-left: 40px;">
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>2019 (SGD 000s)</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>2020 (SGD 000s)</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>Wall and Ruth</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">180</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">170</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>My Moves</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">240</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">285</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>Property Climb</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">360</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">380</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>First Move</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">195</p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;">180</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>Total market sales</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>975</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p style="text-align: left;"><strong>1015</strong></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong style="margin-left: 3%;">5 </strong><span >What was the market share of
+                                        Property Climb in 2020?</span></p>
+                                <div class="hint qHint" style="margin-left: 40px;">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">\(\mathrm{\frac{SGD\;380,000}{SGD\;1,015,000}} \times100\) <br><br> \(=0.37438\times100=37.438=37.4\%\)</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="slideItem">
+
+                                <p>This table shows the sales revenue of four real-estate agents in a town.</p>
+                                <table width="90%" style="margin-left: 5px;">
+                                    <tbody>
+                                    <tr>
+                                    <td width="200">
+                                    <p>&nbsp;</p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>2019 (SGD 000s)</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>2020 (SGD 000s)</strong></p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>Wall and Ruth</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">180</p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">170</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>My Moves</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">240</p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">285</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>Property Climb</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">360</p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">380</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>First Move</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">195</p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;">180</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>Total market sales</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>975</strong></p>
+                                    </td>
+                                    <td width="200">
+                                    <p style="text-align: left;"><strong>1015</strong></p>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p><strong>6 </strong><span >Calculate the market share of each of the four companies in 2019.</span></p>
+                                    <div class="hint qHint">
+                                        <button class="btn" type="button">
+                                            Answer
+                                        </button>
+                                        <span class="notvisible">
+                                            <ul class="square">
+                                                <li>Wall and Ruth: \(\frac{180}{975}\times100=18.5\%\)</li>
+                                                <li>My Moves: \(\frac{240}{975}\times100=24.6\%\)</li>
+                                                <li>Property Climb: \(\frac{360}{975}\times100=36.9\%\)</li>
+                                                <li>First Move: \(\frac{195}{975}\times100=20.0\%\)</li>
+
+                                            </ul>
+                                         </span>
+                                    </div>
+                            
+                            
+                                </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Student work 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson4_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r6a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Calculating percentages</h2>
+                                <p>Calculate the average cost per unit (e.g. the average cost to produce each product) for each company.</p>
+                                <table width="90%" style="margin-left: 5px;">
+                                    <thead>
+                                        <th></th>
+                                        <th>Company A</th>
+                                        <th>Company B</th>
+                                        <th>Company C</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td><strong>(000,000s)</strong></td>
+                                            <td><strong>(000s)</strong></td>
+                                            <td><strong>(000,000s)</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Staff wages </strong></td>
+                                            <td>&pound;15.6</td>
+                                            <td>&pound;382</td>
+                                            <td>&pound;0.8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Marketing</strong></td>
+                                            <td>&pound;12.2</td>
+                                            <td>&pound;912</td>
+                                            <td>&pound;1.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Rent</strong></td>
+                                            <td>&pound;1.7</td>
+                                            <td>&pound;184</td>
+                                            <td>&pound;0.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Total cost</strong></td>
+                                            <td>
+                                                <div class="hint qHint">
+                                                    <button class="btn" type="button">
+                                                        Answer  
+                                                    </button>
+                                                    <p class="notvisible">&pound;29.5</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hint qHint">
+                                                    <button class="btn" type="button">
+                                                        Answer  
+                                                    </button>
+                                                    <p class="notvisible">&pound;1,478</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hint qHint">
+                                                    <button class="btn" type="button">
+                                                        Answer  
+                                                    </button>
+                                                    <p class="notvisible">&pound;2.2</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>No. units produced</strong></td>
+                                            <td>12</td>
+                                            <td>164</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Average cost/unit</strong></td>
+                                            <td>
+                                                <div class="hint qHint">
+                                                    <button class="btn" type="button">
+                                                        Answer  
+                                                    </button>
+                                                    <p class="notvisible">&pound;2.46</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hint qHint">
+                                                    <button class="btn" type="button">
+                                                        Answer  
+                                                    </button>
+                                                    <p class="notvisible">&pound;9.01</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hint qHint">
+                                                    <button class="btn" type="button">
+                                                        Answer 
+                                                    </button>
+                                                    <p class="notvisible">&pound;0.73</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>What was the average revenue per unit for each of these companies?</strong></p>
+                                <ul>
+                                    <li>Company D sells 34,000 products and earns a total revenue of &pound;135,660</li>
+                                    <li>Company E receives &pound;213,521 for selling 32,900 products</li>
+                                    <li>Company F sells 250 products for a total of &pound;46,000 and 390 products for a total of &pound;83,500</li>
+                                </ul>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer for Company D  
+                                    </button>
+                                    <p class="notvisible">&pound;135,660 of revenue / 34,000 products sold = an average revenue (or selling price) of &pound;3.99</p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer for Company E
+                                    </button>
+                                    <p class="notvisible">&pound;213,521 of revenue / 32,900 products sold = an average revenue (or selling price) of &pound;6.49</p>
+                                </div>
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer for Company F 
+                                    </button>
+                                    <span class="notvisible">
+                                        <p>Total revenue = (&pound;46,000 + &pound;83,500) = &pound;129,500</p>
+                                        <p>Products sold = (250 + 390) = 640</p>
+                                        <p>&pound;129,500 of total revenue / 34,000 products sold = an average revenue (or selling price) of &pound;202.34</p>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="slideItem">
+                                <p>Labour productivity is the average number of products each worker in the company produces:</p>
+                                <p>Total output / No. of workers</p>
+                            </div>
+
+
+                            <div class="slideItem">
+                                <p>Calculate the labour productivity of each company:</p>
+                                <ul>
+                                    <li>Company G employs 174 workers and produced 5,916 products last week. What was its labour productivity?</li>
+                                    <li>Company H employs 2,300 workers who produce an average of 71 products each year. How many products will the company produce in a year?</li>
+                                    <li>Company J has calculated its labour productivity as 16.75 units/worker. If it employs 1,190 workers how many products will be produced? </li>
+                                </ul>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer for Company G 
+                                    </button>
+                                    <p class="notvisible">
+                                        \(\frac{5916\;\mathrm{products}}{174\;\mathrm{workers}}=\;34\;\mathrm{units}\;\mathrm{per}\;\mathrm{worker}\)
+                                    </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer for Company H  
+                                    </button>
+                                    <p class="notvisible">2,300 workers × 71 products = <strong>163,300</strong> units will be produced in total during the year </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer for Company J  
+                                    </button>
+                                    <p class="notvisible">1,190 workers × 16.75 units = <strong>19,932</strong> units in total</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson4_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Challenge</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson4_Worksheet3.docx">Worksheet 3</a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">End-of-lesson activity</h2>
+                <h4 id="r9">Question 2</h4>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <p><strong>2</strong><span style="margin-left: 20px;">Lin’s company received revenue of &pound;56,500 in 2022 and had costs of &pound;41,290.</span></p>
+                        <ol class="l2">
+                            <li>Calculate Lin’s profit margin for 2022.</li>
+                            <li>Calculate Lin’s costs as a percentage of her sales for 2022.</li>
+                            <li>If Lin’s profit for 2021 was &pound;9,834, calculate the percentage change in her profit in 2022.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution to Question 2 a</span></button>
+                    <div class="accbody">
+                        <p>Profit is &pound;15,210 (&pound;56,500 − &pound;41,290) and so profit margin is <strong>26.92%</strong> (\(\frac{15,210}{56,500}\times100\))</p>
+                    </div>
+                </div>
+
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution to Question 2 b</span></button>
+                    <div class="accbody">
+                        <p>\(\frac{41,290}{56,500}\times100\;=\;\mathbf{73}\boldsymbol.\mathbf{08}\boldsymbol\%\)</p>
+                    </div>
+                </div>
+
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution to Question 2 c</span></button>
+                    <div class="accbody">
+                        <p>Change in profit is £5,826 (£15,210 − £9,834) and so percentage increase is <strong>62.08%</strong> (\(\frac{&pound;5,826}{&pound;9,834}\times100\))</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource10">
+                <h2 id="r10">Homework</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson4_Homework.docx">Homework sheet</a>
+            </div>
+
+
+            <div class="resource" id="resource11">
+                <h2 id="r11">Alternative activity</h2>
+                <h4 id="r11">Question 3</h4>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <p><strong>The table below shows information about a company’s sales and costs.</strong></p>
+                        <table width="30%" style="margin-left: 30px;">
+                            <tbody>
+                                <tr>
+                                    <td>Selling price</td>
+                                    <td width="50%">&pound;2.79</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of products sold</td>
+                                    <td width="50%">12,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Cost of buying products</td>
+                                    <td width="50%">&pound;7,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Wages</td>
+                                    <td width="50%">&pound;16,900</td>
+                                </tr>
+                                <tr>
+                                    <td>Rent</td>
+                                    <td width="50%">&pound;10,500</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                        <p><strong>Use the information to calculate the following:</strong></p>
+                        <ol class="l2">
+                            <li>Total revenue</li>
+                            <li>Total costs</li>
+                            <li>Profit</li>
+                            <li>Profit as a percentage of total revenue</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+                        <ol class="l2">
+                            <li>£2.79 × 12,600 = Total revenue of <strong>&pound;35,154</strong></li>
+                            <li>£7,500 + &pound;16,900 + &pound;10,500 = Total costs of <strong>&pound;34,900</strong></li>
+                            <li>Profit = &pound;35,154 - &pound;34,900 = <strong>&pound;254</strong></li>
+                            <li>\(\frac{\mathrm{Profit}}{\mathrm{Total}\;\mathrm{revenue}}\;\times100=\mathbf0\boldsymbol.\mathbf{72}\boldsymbol\%\)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource12">
+                <h2 id="r12">Alternative end-of-lesson activity</h2>
+                <h4 id="r12">Question 4</h4>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <p>The table below shows quantitative data for Thuy’s company.</p>
+                        <table width="50%" style="margin-left: 30px;">
+                            <thead>
+                                <th></th>
+                                <th>2021</th>
+                                <th>2022</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Revenue</strong></td>
+                                    <td>&pound;1,568,000</td>
+                                    <td>&pound;1,832,000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total labour costs</strong></td>
+                                    <td>&pound;1,247,520</td>
+                                    <td>&pound;1,148,100</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Number of products sold</strong></td>
+                                    <td>11,000</td>
+                                    <td>10,500</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Number of workers</strong></td>
+                                    <td>92</td>
+                                    <td>89</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ol>
+                            <li>Work out Thuy’s average selling price for each product in <strong>a)</strong> 2021 and <strong>b)</strong> 2022.</li>
+                            <li>Work out the average pay per worker in both <strong>a)</strong> 2021 and <strong>b)</strong> 2022. </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+                        <p><strong>Answers</strong></p>
+                        <p><strong>1</strong><span style="margin-left: 20px;">
+                            <ol class="l2" style="margin-top: -55px;">
+                                <li>2021 average selling price = &pound;1,568,000 / 11,000 = <strong>&pound;142.55</strong></li>
+                                <li>2022 average selling price = \(\frac{&pound;1,832,000}{10,000}\;=\mathbf{&pound;174}\boldsymbol.\mathbf{48}\)</li>
+                            </ol>
+                        </span></p>
+
+                        <p><strong>2</strong><span style="margin-left: 20px;">
+                            <ol class="l2" style="margin-top: -80px;">
+                                <li>2021 average pay/worker = \(\frac{&pound;1,247,520}{92}\;=\mathbf{&pound;13}\boldsymbol,\mathbf{560}\)</li>
+                                <li>2022 average pay/worker = \(\frac{&pound;1,148,100}{89}\;=\mathbf{&pound;12}\boldsymbol,\mathbf{900}\)</li>
+                            </ol>
+                        </span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource13">
+                <h2 id="r13">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson4_Answers.docx">Answer sheet</a>
+            </div>
+
+           
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

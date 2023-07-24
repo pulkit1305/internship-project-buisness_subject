@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+
+
+    <style>
+        td {
+            text-align: left;
+        }
+
+        .slideItem ol>li,
+        .accordionItem ol>li {
+            display: block;
+            text-indent: -27px;
+        }
+    </style>
+
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 14: Resources</span>
+                <span class="lname">Factors that Determine the Location of a Business 2</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Subject
+                    vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r3">Slideshow: General
+                    vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r4">Worksheet 1</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r5">Slideshow: Impact of the internet on
+                    location</button>
+                <button type="button" class="btn yl resr" data-id="r6">Worksheet 2</button>
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r7">Slideshow: Government influences on business
+                    location</button>
+                <button type="button" class="btn yl resr" data-id="r8">Worksheet 3</button>
+
+                <h2>Challenge</h2>
+                <button type="button" class="btn yl resr" data-id="r9">Slideshow: Challenge task</button>
+
+                <h2>End-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Slideshow: Questions 1 and 2</button>
+
+                <h2>Alternative starter</h2>
+                <button type="button" class="btn yl resr" data-id="r11">Question 3</button>
+
+                <h2>Alternative end-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r12">Question 4</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="r13">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r14">Answer sheet</button>
+            </section>
+
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h3>Learning objectives</h3>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul style="margin-left: 3%;">
+                                    <li>recognise the impact that the internet has on business location</li>
+                                    <li>recognise the impact that government restrictions and trading blocs may have on
+                                        business location.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Subject vocabulary</h2>
+                                <ul>
+                                    <li><strong>assisted areas:</strong> areas that are designated by a government as
+                                        having economic problems and are targeted to receive support in a variety of
+                                        forms</li>
+                                    <li><strong>&lsquo;footloose&rsquo; businesses:</strong> businesses who can operate
+                                        anywhere rather than being permanently tied to any one location</li>
+                                    <li><strong>subsidy: </strong>financial support given to a domestic producer to help
+                                        compete with overseas businesses</li>
+                                    <li><strong>tariff: </strong>a tax on imports to make them more expensive</li>
+                                    <li><strong>trade bloc: </strong>a group of countries that join together and agree
+                                        to reduce or eliminate the barriers to trade between themselves.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 id="r3">Key definitions</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Key definitions: General vocabulary</h2>
+                                <ul>
+                                    <li><strong>amenities: </strong>something that makes a place comfortable or easy to
+                                        live in</li>
+                                    <li><strong>connectivity: </strong>the ability of computers and other electronic
+                                        equipment to connect with other computers or programs</li>
+                                    <li><strong>e-commerce or e-tailing</strong>: use of electronic systems to sell
+                                        goods or services</li>
+                                    <li><strong><strong>infrastructure</strong></strong>: systems or structures that a
+                                        country needs in order to work properly e.g. roads or mobile phone masts.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource4">
+                <h2 id="r4">Starter</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson14_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r5a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+                                <h2>Impact of the internet on location</h2>
+
+
+
+
+
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" width="601">
+                                                <p style="text-align: center;"><strong>Sector of the economy in which
+                                                        the business operates</strong></p>
+                                                <p> Primary Secondary Tertiary</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" width="52">
+                                                <p style.transform='rotate(90deg)'><strong>Impact of the internet on
+                                                        location</strong></p>
+                                                <p>High Low</p>
+
+                                            </td>
+                                            <td width="195">
+
+                                            </td>
+                                            <td width="197">
+
+                                            </td>
+                                            <td width="157">
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="195">
+
+                                            </td>
+                                            <td width="197">
+
+                                            </td>
+                                            <td width="157">
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="slideItem">
+                                <h4><span style="margin-left: 20%;">The internet as an influence on business
+                                        location</span></h4>
+                                <ul class="square">
+                                    <li>Goods can be sold online so reduced need for physical shops</li>
+                                    <li>Transport links vital for quick distribution of online orders</li>
+                                    <li>Businesses still need warehouses to distribute goods</li>
+                                    <li>Many services can be provided remotely</li>
+                                    <li>Cost savings available from smaller/no physical sites</li>
+                                    <li>Staff can collaborate online rather than in person</li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Teaching Session 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson14_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r7a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2> Government influences on business location</h2>
+                                <h4>Government influences on business location</h4>
+                                <p><strong>Legal controls:</strong></p>
+                                <ul class="square" style="margin-left: 3%;">
+                                    <li>Planning permission</li>
+                                    <li>Licences to carry out certain business activities</li>
+                                    <li>Restrictions on heavily polluting industries</li>
+                                    <li>Rules/laws to reduce or prevent congestion</li>
+                                </ul>
+
+                            </div>
+                            <div class="slideItem">
+
+                                <p>Reasons why governments try to attract new businesses to a particular area:</p>
+                                <ol style="margin-left: 3%;">
+                                    <li>To boost employment in a particular area</li>
+                                    <li>Because producing in their country creates tax revenues for the government</li>
+                                    <li>To bring new investment/ideas/skilled workers to a country/area</li>
+                                    <li>To create important new services for residents</li>
+                                </ol>
+                                <p><strong><strong>Question:</strong></strong>&nbsp;Think of as many ways as possible
+                                    that a government could try to incentivise businesses to locate to a certain area or
+                                    the country as a whole.</p>
+
+
+                            </div>
+                            <div class="slideItem">
+
+                                <p><strong>Government methods of attracting businesses to (re)locate in a certain
+                                        location</strong></p>
+                                <ul class="square">
+                                    <li>Tax breaks (cuts)</li>
+                                    <li>Provide key services/infrastructure</li>
+                                    <li>Subsidise key activities</li>
+                                    <li>Relax work permit rules</li>
+                                    <li>Run training courses</li>
+                                    <li>&nbsp;Promote the location directly to businesses</li>
+                                </ul>
+
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Question:</strong> Match the features of a trade bloc to their impacts.
+                                </p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="179">
+                                                <p><strong>Feature</strong></p>
+                                            </td>
+                                            <td width="38">
+                                                <p><strong>&nbsp;</strong></p>
+                                            </td>
+                                            <td width="384">
+                                                <p><strong>Impact</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>A</strong></div>
+                                                    <div>Reduced tariffs</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="38">
+                                                <p>&nbsp;</p>
+                                            </td>
+                                            <td width="384">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>1</strong></div>
+                                                    <div>Makes delivery of key components or finished goods
+                                                        quicker, improving efficiency and reducing cost</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>B</strong></div>
+                                                    <div>Removing border checks on imported goods</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="38">
+                                                <p></p>
+                                            </td>
+                                            <td width="384">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>2</strong></div>
+                                                    <div>Businesses will not relocate away because they can
+                                                        easily bring high-skill workers in when they are needed</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p><strong>C </strong>Product standard alignment</p>
+                                            </td>
+                                            <td width="38">
+                                                <p></p>
+                                            </td>
+                                            <td width="384">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>3</strong></div>
+                                                    <div>Running a multinational is easier because rules on
+                                                        how to treat employees, imports and customers are the same for
+                                                        all
+                                                        members of the trade bloc</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>D</strong></div>
+                                                    <div>Laws to ensure equal treatment of all businesses
+                                                        across the trade bloc</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="38">
+                                                <p></p>
+                                            </td>
+                                            <td width="384">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>4</strong></div>
+                                                    <div>Make it cheaper to produce inside rather than
+                                                        outside the trade bloc</div>
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>E</strong></div>
+                                                    <div>Free movement of workers</div>
+                                                </div>
+
+
+                                            </td>
+                                            <td width="38">
+                                                <p></p>
+                                            </td>
+                                            <td width="384">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>5</strong></div>
+                                                    <div>Businesses can produce one product and then sell
+                                                        it to a huge market. Businesses benefit from economies of scale
+                                                    </div>
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="slideItem">
+                                <h4>Answers</h4>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="179">
+                                                <p><strong>Feature</strong></p>
+                                            </td>
+                                            <td width="38">&nbsp;</td>
+                                            <td width="384">
+                                                <p><strong>Impact</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>A</strong></div>
+                                                    <div>Reduced tariffs</div>
+                                                </div>
+                                            </td>
+                                            <td width="38">&nbsp;</td>
+                                            <td width="384">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>4</strong></div>
+                                                    <div>Make it cheaper to produce inside rather than
+                                                        outside the trade bloc</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>B</strong></div>
+                                                    <div>Removing border checks on imported goods</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="38">&nbsp;</td>
+                                            <td width="384">
+
+
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>1</strong></div>
+                                                    <div>Makes delivery of key components or finished goods
+                                                        quicker, improving efficiency and reducing cost</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>C</strong></div>
+                                                    <div>Product standard alignment</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="38">&nbsp;</td>
+                                            <td width="384">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>5</strong></div>
+                                                    <div>Businesses can produce one product and then sell
+                                                        it to a huge market. Businesses benefit from economies of scale
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>D</strong></div>
+                                                    <div>Laws to ensure equal treatment of all businesses
+                                                        across the trade bloc</div>
+                                                </div>
+                                            </td>
+                                            <td width="38">&nbsp;</td>
+                                            <td width="384">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>3</strong></div>
+                                                    <div>Running a multinational is easier because rules on
+                                                        how to treat employees, imports and customers are the same for
+                                                        all
+                                                        members of the trade bloc</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>E</strong></div>
+                                                    <div>Free movement of workers</div>
+                                                </div>
+                                            </td>
+                                            <td width="38">&nbsp;</td>
+                                            <td width="384">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>2</strong></div>
+                                                    <div>Businesses will not relocate away because they can
+                                                        easily bring high-skill workers in when they are needed</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson14_Worksheet3.docx">Worksheet 3</a>
+            </div>
+
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Challenge</h2>
+
+                <div class="slideshowContainer" id="r9a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+
+                                <h2>Challenge task</h2>
+                                <p><strong><strong>Task</strong></strong></p>
+                                <p>Use the business you discussed at the beginning of the lesson.</p>
+                                <p>Review the extent to which your business would be influenced by the government in our
+                                    country. Prepare a brief report for your co-owners, which covers:</p>
+                                <ul style="margin-left: 3%;">
+                                    <li>(Changes in) laws and regulations</li>
+                                    <li>Financial incentives and taxes that must be paid</li>
+                                    <li>How much it will cost in one location compared to another and why</li>
+                                    <li>Whether membership of a trade bloc influences location decisions</li>
+                                    <li>An overall decision about whether our government&rsquo;s policies have a big
+                                        enough impact to influence where and how your business operates or not.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource10">
+                <h2 id="r10">End-of-lesson activity</h2>
+             
+                <div class="hint qHint"id="r10">
+                    <button class="btn" type="button">
+                        Answer
+                    </button>
+                    <p class="notvisible"><b>Questions 1 and 2</b></p>
+              
+            </div>
+                <div class="slideshowContainer" id="r10a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <p>
+                                <div class="flex" style="display:flex; gap: 20px;">
+                                    <div><strong>1</strong></div>
+                                    <div>Which one of the following is the <strong>most</strong> likely reason
+                                        for a manufacturer to relocate their business?</div>
+                                </div>
+                                <br>
+
+                                <ol class="l3" style="margin-left: 1% ;">
+                                    <li>To help them start selling their products online</li>
+                                    <li>To benefit from financial incentives such as tax breaks</li>
+                                    <li>To provide more space for them to expand</li>
+                                    <li>To benefit from lower energy costs</li>
+                                </ol>
+
+                                </p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible"><strong>B</strong> or <strong>C</strong></p>
+                                </div>
+
+                            </div>
+
+                            <div class="slideItem">
+                                <p>
+                                <div class="flex" style="display:flex; gap: 20px;">
+                                    <div><strong>2</strong></div>
+                                    <div>Which two of the following are decisions that a country’s government
+                                        can unilaterally take to influence a business’s location decision?</div>
+                                </div>
+                                <br>
+                                <ol class="l3" style="margin-left: 1% ;">
+                                    <li>To help them start selling their products online</li>
+                                    <li>To benefit from financial incentives such as tax breaks</li>
+                                    <li>To provide more space for them to expand</li>
+                                    <li>To benefit from lower energy costs</li>
+                                </ol>
+                                </li>
+
+                                </p>
+
+
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible"><strong>C</strong> and <strong>D</strong></p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource11">
+                <h2 id="r11">Alternative starter</h2>
+
+                <div class="slideshowContainer" id="r11a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Question 3</h4>
+                                <div class="flex" style="display:flex; gap: 20px;">
+
+
+                                    <div><strong>3</strong></div>
+                                    <div>Businesses often choose a location based on the factors listed
+                                        below. Match the type of business to the most likely reason for its choice of
+                                        location. Make sure you are able to give a reason for your answer.</div>
+                                </div>
+                                <br>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="254">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>A</strong></div>
+                                                    <div>A coal mining business</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="37">&nbsp;</td>
+                                            <td width="308">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>i</strong></div>
+                                                    <div>Close to its customers</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="254">
+
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>B</strong></div>
+                                                    <div>A business that makes cheap clothing</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="37">&nbsp;</td>
+                                            <td width="308">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>ii</strong></div>
+                                                    <div>Close to its competitors</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="254">
+
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>C</strong></div>
+                                                    <div>A business offering riverboat tours</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="37">&nbsp;</td>
+                                            <td width="308">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>iii</strong></div>
+                                                    <div>Close to a source of materials/resources</div>
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="254">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>D</strong></div>
+                                                    <div>A pizza delivery business</div>
+                                                </div>
+
+                                            </td>
+                                            <td width="37">&nbsp;</td>
+                                            <td width="308">
+                                                <div class="flex" style="display:flex; gap: 20px;">
+                                                    <div><strong>iv</strong></div>
+                                                    <div>Close to a source of labour</div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource12">
+              
+                <h2 id="r12">Alternative end-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r12a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Question 4</h4>
+
+                                <div style="border: 1px solid black; padding: 10px; text-align: center;">
+                                    <p style="margin: 0 auto;">
+                                        Apple, the world&rsquo;s most profitable smartphone producer, has its European
+                                        headquarters in Ireland. A court has estimated that the Irish government has
+                                        given
+                                        EUR15 billion of tax breaks to the company as part of the arrangements that
+                                        convinced Apple to base itself in Ireland.
+                                    </p>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="flex" style="display:flex; gap: 20px;">
+                                    <div><strong>4</strong></div>
+                                    <div>
+                                        <ol class="l2">
+                                            <li>Why might a
+                                                country such as Ireland allow Apple to reduce its tax payments by such a
+                                                large
+                                                amount?</li>
+                                            <li>What are
+                                                the arguments for the country removing this tax break in the future?
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource13">
+                <h2 id="r13">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson14_Answers.docx">Answer sheet</a>
+            </div>
+
+
+
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

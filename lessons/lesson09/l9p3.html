@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 9: Resources</span>
+                <span class="lname">Public Corporations</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Key definitions</button>
+
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r3">Slideshow: Public corporations</button>
+
+
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: Reasons for public
+                    ownership</button>
+                <button type="button" class="btn yl resr" data-id="r5">Worksheet 1</button>
+                <button type="button" class="btn yl resr" data-id="r6">Worksheet 2</button>
+
+                <h2>Alternative starter</h2>
+                <button type="button" class="btn yl resr" data-id="r7">Slideshow: Questions 1 to 4</button>
+
+                <h2>Alternative end-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r8">Slideshow: Questions 5</button>
+
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl resr" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r9">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul>
+                                    <li>determine the main features of a public corporation</li>
+                                    <li>examine the main characteristics relating to the size of public corporations.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+
+                                <ul>
+                                    <li><strong>nationalisation: </strong>the transfer of ownership from the private to
+                                        the public sector</li>
+                                    <li><strong>natural monopoly:</strong> an industry where huge set-up costs mean it
+                                        is only logical for one company to exist</li>
+                                    <li><strong>privatisation:</strong> the transfer of public sector resources to the
+                                        private sector</li>
+                                    <li><strong>public corporations</strong>: business organisations owned by the
+                                        government and run on behalf of the citizens of a country</li>
+                                    <li><strong>public sector</strong>: business organisations owned by central or local
+                                        government</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 class="indentLeft" id="r3">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h4>Public corporations</h4>
+                                <p><strong>Public corporations</strong></p>
+                                <ul>
+                                    <li>Businesses owned by the government and operated on behalf of citizens</li>
+                                    <li>They are set up to provide a particular service to the people of the country,
+                                        rather than make a profit.</li>
+                                    <li>Part of the public sector.</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">
+                                                <p><strong>Public corporation</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>Private sector</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>a </strong>Owned by the government</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>b </strong>Aims to maximise profit</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>c </strong>Provides a public service</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>d </strong>Owned by individuals</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>e </strong>Sole traders</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>f </strong>Funded by the government</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">
+                                                <p><strong>Public corporation</strong></p>
+                                            </td>
+                                            <td width="200">
+                                                <p><strong>Private sector</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>a </strong>Owned by the government</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>b </strong>Aims to maximise profit</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>c </strong>Provides a public service</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>d </strong>Owned by individuals</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>e </strong>Sole traders</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                            <td width="200">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="200">
+                                                <p><strong>f </strong>Funded by the government</p>
+                                            </td>
+                                            <td width="200">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                            <td width="200">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="resource" id="resource4">
+                <h2 class="indentLeft" id="r4">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Reasons for public ownership</h2>
+
+                                <p><strong>Reasons for public ownership</strong></p>
+                                <Expand button 1>Expand
+                                    <Expand button 1 revealed>
+                                        <ul>
+                                            <li>Because private-sector companies will only supply if they can make a
+                                                profit, some goods would be under-provided or not provided at all</li>
+                                        </ul>
+
+                                        <Expand button 2>Expand
+                                            <Expand button 2 revealed>
+                                                <ul>
+                                                    <li>Certain key industries (such as defence or communications) are
+                                                        seen as vital for a government to control in order to protect
+                                                        citizens</li>
+                                                </ul>
+
+                                                <Expand button 3>Expand
+                                                    <Expand button 3 revealed>
+                                                        <ul>
+                                                            <li>To protect the jobs of workers when private companies
+                                                                might be more influenced by profits</li>
+                                                        </ul>
+
+                                                        <Expand button 4>Expand
+                                                            <Expand button 4 revealed>
+                                                                <ul>
+                                                                    <li>Because an industry is a natural monopoly and it
+                                                                        is logical for just one company to exist and
+                                                                        only the government is willing to provide the
+                                                                        service</li>
+                                                                </ul>
+
+                                                                <Expand button 5>Expand
+                                                                    <Expand button 5 revealed>
+                                                                        <ul>
+                                                                            <li>To ensure sufficient investment into a
+                                                                                company or industry</li>
+                                                                        </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Possible disadvantages of public ownership</strong></p>
+                                <ul>
+                                    <li>The costs involved in providing services for free must be paid through taxes
+                                    </li>
+                                    <li>High costs to taxpayer if public corporations make losses</li>
+                                    <li>Public corporations do not have an incentive to cut costs or be efficient</li>
+                                    <li>May be influenced by political rather than business considerations/objectives
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Teaching Session 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson9_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Student Work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson9_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Alternative end-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r7a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Questions 1 to 4</h2>
+                                <ol>
+                                    <li>How many different forms of ownership are there?</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">4</p>
+                                </div>
+                                <ol>
+                                    <li>Name these different forms ownership.</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">Sole trader, partnership, private limited companies, public
+                                        limited companies</p>
+                                </div>
+                                <ol>
+                                    <li>Who owns companies with these forms of ownership?</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">Private individuals</p>
+                                </div>
+                                <ol>
+                                    <li>Name one financial objective that all of the different types of business are
+                                        likely to share?</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">Making profit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource8">
+                <h2 id="r8">Alternative end-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r8a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Question 5</h2>
+                                <ol>
+                                    <li>Decide if each statement is an advantage or a disadvantage of a public
+                                        corporation</li>
+                                </ol>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="363">&nbsp;</td>
+                                            <td width="119">
+                                                <p>Advantage</p>
+                                            </td>
+                                            <td width="95">
+                                                <p>Disadvantage</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="363">
+                                                <p><strong>a</strong> Provide essential services for a population</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                            <td width="95">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="363">
+                                                <p><strong>b</strong> Protect consumer&rsquo;s interests even when they
+                                                    have monopoly power</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                            <td width="95">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="363">
+                                                <p><strong>c</strong> Financial cost to the government</p>
+                                            </td>
+                                            <td width="119">&nbsp;</td>
+                                            <td width="95">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="363">
+                                                <p><strong>d</strong> Protect employment</p>
+                                            </td>
+                                            <td width="119">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                            <td width="95">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="363">
+                                                <p><strong>e</strong> Potentially inefficient</p>
+                                            </td>
+                                            <td width="119">&nbsp;</td>
+                                            <td width="95">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="363">
+                                                <p><strong>f</strong> May face political interference</p>
+                                            </td>
+                                            <td width="119">&nbsp;</td>
+                                            <td width="95">
+                                                <p>&lt;tick&gt;</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson9_Answers.docx">Answer sheet</a>
+            </div>
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>
