@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 1 | Resources</span>
+                <span class="lname">Financial Aims and Objectives/Exam Skills 1</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Subject vocabulary</button>
+                <button type="button" class="btn yl resr" data-id="r3">Slideshow: General vocabulary</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: Financial objectives of
+                    businesses</button>
+                <button type="button" class="btn yl resr" data-id="r5">Question 1</button>
+                <button type="button" class="btn yl resr" data-id="r6">Worksheet 1</button>
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r7">Question 2</button>
+                <button type="button" class="btn yl resr" data-id="r8">Slideshow: ‘State’ example</button>
+                <button type="button" class="btn yl resr" data-id="r9">Worksheet 2</button>
+
+                <h2>Challenge</h2>
+                <button type="button" class="btn yl resr" data-id="r10">Worksheet 3</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r13">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 class="indentLeft" id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul>
+                                    <li>understand the different financial objectives of a business</li>
+                                    <li>answer different types of 1-mark exam questions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 class="indentLeft" id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Subject vocabulary</h2>
+                                <ul>
+                                    <li><strong>entrepreneur: </strong>a person who takes risks and sets up a business
+                                    </li>
+                                    <li><strong>financial security: </strong>when a business earns enough money to both
+                                        survive and satisfy the needs of the owner</li>
+                                    <li><strong>market share:</strong> proportion of sales in a total market that a
+                                        business or product enjoys</li>
+                                    <li><strong>objectives</strong>: goals or targets set by a business</li>
+                                    <li><strong>profit: </strong>when revenue is greater than costs (total revenue
+                                        &ndash; total costs)</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <ul>
+                                    <li><strong>revenue: </strong>money from the sale of goods and services</li>
+                                    <li><strong>sales volume: </strong>the number of products a business sells in a
+                                        particular period of time</li>
+                                    <li><strong>sales value: </strong>the worth of all the goods a business sells in a
+                                        particular period of time (selling price &times; quantity sold)</li>
+                                    <li><strong>survival: </strong>when a business makes enough money to cover the costs
+                                        it has to pay in the next few months</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource3">
+                <h2 id="r3">&nbsp;</h2>
+                <div class="slideshowContainer" id="r3a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>General vocabulary</h2>
+                                <ul>
+                                    <li><strong>command word:</strong> the verb in an exam question that explains what a
+                                        student is required to do</li>
+                                    <li><strong>financial: </strong>relating to money</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource4">
+                <h2 class="indentLeft" id="r4">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Financial objectives of businesses</h2>
+                                <p><strong>Different business objectives</strong></p>
+                                <br>
+                                <p>Which of these are financial objectives?</p>
+                                <br>
+                                <ol class="l3">
+                                    <li>Making profit</li>
+                                    <li>Personal satisfaction</li>
+                                    <li>Being financially secure</li>
+                                    <li>Surviving the first 3 months</li>
+                                    <li>Challenging yourself</li>
+                                    <li>Being your own boss</li>
+                                    <li>Selling more goods than any other business</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible"><strong>A</strong><span style="padding-left: 40px;"><strong>C</strong></span><strong><span style="padding-left: 40px;">D</span></strong><span style="padding-left: 40px;"><strong>G</strong></span> </p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <h2>Financial aims and objectives</h2>
+                                <ul>
+                                    <li>Survival</li>
+                                    <li>Profit</li>
+                                    <li>Sales</li>
+                                    <li>Market share</li>
+                                    <li>Financial security</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <h2>Profit</h2>
+                                <div class="blackBox">
+                                    <ul>
+                                        <li>Profit = Total revenue &ndash; Total costs (Profit = TR &ndash; TC)</li>
+                                        <li>Total revenue (sales revenue) = Selling price &times; Quantity sold (TR = SP
+                                            &times; Q)</li>
+                                    </ul>
+                                </div>
+                                <p><strong>Questions</strong></p>
+
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>1</strong></span>If a business produces 100
+                                    cars each week and sells them for $10,000 each, how
+                                    much total revenue will the business earn?</p>
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span>How much profit will be left
+                                    if it has total costs equalling $750,000/week?</p>
+                            </div>
+                            <div class="slideItem">
+                                <h2>Answers to Questions 1 and 2</h2>
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>1</strong></span><span>If a company produces
+                                        100 cars
+                                        each week and sells them for $10,000 each, how
+                                        much total revenue will it earn?</span></p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer Step 1
+                                    </button>
+                                    <p class="notvisible">SP × Q = TR</p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer Step 2
+                                    </button>
+                                    <p class="notvisible">So $10,000 × 100 = $1,000,000 of total revenue</p>
+                                </div>
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span><span>How much profit will be
+                                        left if it has total costs equalling $750,000/week?</span></p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer Step 1
+                                    </button>
+                                    <p class="notvisible">TR – TC = Profit</p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer Step 2
+                                    </button>
+                                    <p class="notvisible">$1,000,000 – $750,000 = $250,000</p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <h2>Calculating market share</h2>
+                                <p>Example:</p>
+                                <p>Company A sells 150 products each week. Total sales of that type of product within
+                                    the market are 10,000 products per week. Its market share can be calculated by:</p>
+                                <br>
+                                <p style="margin-left:5%">\(\frac{\mathrm{Company}\;\mathrm A'\mathrm
+                                    s\;\mathrm{sales}}{\mathrm{Totale}\;\mathrm{market}\;\mathrm{sales}}\times100\)</p>
+                                <p style="margin-left:5%">So: \(\frac{150}{10,000}\times100=1.5\%\) </p>
+                                <br>
+                                <p>This means Company A receives 1.5% of all the sales in that particular market. Its
+                                    market share is 1.5%.</p>
+                            </div>
+                            <div class="slideItem">
+                                <h2>Questions</h2>
+                                <p>Calculate these market shares.</p>
+
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>1</strong></span><span>Between January and
+                                        March
+                                        2022, Samsung sold
+                                        659,000 mobile phones in Australia
+                                        out of a total of 1,806,000 million phones sold in the country.<br />What was
+                                        Samsung&rsquo;s market share (in terms of sales volume)?</span></p>
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span><span>Tesco&rsquo;s sales in
+                                        the
+                                        UK totalled &pound;9.9
+                                        bn between March and May
+                                        2022.<br />If the total value of sales in its market was &pound;36.8 bn, what
+                                        was its market share (in value terms)?</span></p>
+
+                            </div>
+                            <div class="slideItem">
+                                <h2>Answer to Question 1</h2>
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>1</strong></span><span>Between January and
+                                        March 2022, Samsung sold 659,000 mobile phones in Australia
+                                        out of a total of 1,806,000 million phones sold in the country.<br />What was
+                                        Samsung&rsquo;s market share (in terms of sales volume)?</span></p>
+                                <p><strong>Answer</strong></p>
+                                <p>Formula: \(\frac{\mathrm{Samsung}'\mathrm
+                                    s\;\mathrm{sales}}{\mathrm{Total}\;\mathrm{market}\;\mathrm{sales}}\times100\)</p>
+                                <p>\(=\frac{659,000}{1,806,000}\times100\) (to turn into a percentage)</p>
+                                <p>\(=36.5\%\)</p>
+                            </div>
+                            <div class="slideItem">
+                                <h2>Answer to Question 2</h2>
+                                <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span><span>Tesco&rsquo;s sales in
+                                        the UK
+                                        totalled &pound;9.9 bn between March and May 2022.<br>
+                                        If the total value of sales in its market was &pound;36.8
+                                        bn, what was its market share (in value terms)?
+                                    </span></p>
+
+                                <p><strong>Answer</strong></p>
+                                <p>Formula: \(\frac{\mathrm{Tesco}'\mathrm
+                                    s\;\mathrm{sales}\;(\mathrm{value})}{\mathrm{Total}\;\mathrm{market}\;\mathrm{sales}\;(\mathrm{value})}\times100\)
+                                </p>
+                                <p>\(=\frac{9.9}{36.8}\times100\)</p>
+                                <p>\(=26.9\%\)</p>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Which type of objective did each company set?</strong></p>
+
+                                <p>Match each company and its aim to the correct type of financial objective.</p>
+                                <p><strong>Extension: </strong>Use your matches to consider the examples for the
+                                    <strong>Sales</strong> and <strong>Market share</strong> objectives. For each one,
+                                    state whether it relates to sales volume or sales value.
+                                </p>
+                                <div class="matchingact">
+                                    <div class="questions">
+
+                                        <div class="question"><span><strong>1</strong> </span><span>To sell 200 umbrellas to customers by the end of the week</span></div>
+                                        <div class="question"><span><strong>2</strong></span><span>To earn £1 of every £4 spent within our market</span></div>
+                                        <div class="question"><span><strong>3</strong></span><span>As a new company, to still be in business in 3 months’ time</span></div>
+                                        <div class="question"><span><strong>4</strong></span><span>To be able, as the company’s owner, to retire with no money worries in 3 years’ time</span></div>
+                                        <div class="question"><span><strong>5</strong></span><span>After all costs have been paid, have $15,000 left at the end of the company’s first year</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="dndActivity">
+
+
+                                        <div id="list">
+                                            <div class="draggable" data-id="3"><span><strong>A</strong></span><span>Survival</span></div>
+                                            <div class="draggable" data-id="5"><span><strong>B</strong></span><span>Profit</span></div>
+                                            <div class="draggable" data-id="1"><span><strong>C</strong></span><span>Sales</span></div>
+                                            <div class="draggable" data-id="2"><span><strong>D</strong></span><span>Market share</span></div>
+                                            <div class="draggable" data-id="4"><span><strong>E</strong></span><span>Financial security</span></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <button class="btn check-btn" id="check">
+                                    Check your answer
+                                </button>
+                                <button class="btn showcorrect" id="show">
+                                    Show correct answer
+                                </button>
+                                <button class="btn reset" id="reset">
+                                    Reset
+                                </button>
+
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource5">
+                <h2 id="r5">Student work 1</h2>
+                <h4>Question 1</h4>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <p>Identify the type of financial objective for each example below.</p>
+
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>1</strong></span><span>Have
+                                2,000 subscribers to the website by the end of the year.</span></p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span><span>Make
+                                $28,000 of total revenue but only have costs of $21,000.</span></p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>3</strong></span><span>Pay
+                                the owner the same amount they earned from their old job.</span></p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>4</strong></span><span>Be
+                                chosen to supply the football kit of 10 of the 20 teams in the English Premier
+                                League.</span></p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>5</strong></span><span>To
+                                still be operating at the end of the first year.</span></p>
+
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>1</strong></span><span>Have
+                                2,000 subscribers to the website by the end of the year &ndash;
+                                <strong>Sales</strong></span>
+                        </p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span><span>Make
+                                $28,000 of total revenue but only have costs of $21,000 &ndash;
+                                <strong>Profit</strong></span>
+                        </p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>2</strong></span><span>Pay
+                                the owner the same amount they earned from their old job &ndash; <strong>Financial
+                                    security</strong></span></p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>3</strong></span>
+                            <spanp>Be
+                                chosen to supply the football kit of 10 of the 20 teams in the English Premier League
+                                &ndash; <strong>Market share</strong></spanp </p>
+                        <p style="display:flex; gap:20px;"><span style="flex-basis:20px;"><strong>4</strong></span><span>To
+                                still be operating at the end of the first year &ndash; <strong>Survival</strong></span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource6">
+                <h2 id="r6">Student work 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson1_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Teaching session 2</h2>
+                <h4>Question 2</h4>
+                <div class="accordionItem question">
+                    <button class="accordion "><i class="material-icons">check_circle_outline</i>
+                        <span>Question</span></button>
+                    <div class="accbody">
+                        <p>Using the information in Figure 1, identify the business with the largest market share. [1]
+                        </p>
+                        <figure class="image" style="display:table; border:0px solid #dee2e6; max-width:100%; clear:both; margin: 0 auto;">
+                            <img src="assets/img/poaig_math_l1_img1.png" width="300px;" />
+                        </figure>
+                        <p><strong>Figure 1</strong></p>
+                    </div>
+                </div>
+                <div class="accordionItem solution">
+                    <button class="accordion"><i class="material-icons">check_circle_outline</i>
+                        <span>Solution</span></button>
+                    <div class="accbody">
+                        <p>Answer: Business A</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource8">
+                <h2 class="indentLeft" id="r8">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r8a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>&lsquo;State example&rsquo;</h2>
+                                <p><em>The Range </em>is a retail store that sells household goods such as tables,
+                                    chairs and kitchen appliances. It is owned by Chris and Sarah Dawson who are now
+                                    some of the wealthiest business owners in the UK. They focus on financial
+                                    objectives<em>.</em></p>
+                                <p>State one financial objective <em>The Range</em> may focus on. (1 mark)</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Example answer
+                                    </button>
+                                    <p class="notvisible">Financial security, because owning <em>The Range</em> has made
+                                        Chris and Sarah Dawson some of the wealthiest business owners in the UK.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson1_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+            <div class="resource" id="resource10">
+                <h2 id="r10">Challenge</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson1_Worksheet3.docx">Worksheet 3</a>
+            </div>
+
+            <div class="resource" id="resource13">
+                <h2 id="r13">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson1_Answers.docx">Answer sheet</a>
+            </div>
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/dnd2.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

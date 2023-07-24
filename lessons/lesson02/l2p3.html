@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plans</title>
+    <script src="../../js/lib/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+        .dragitems {
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            user-select: none;
+
+        }
+    </style>
+</head>
+
+<body class="p3 presentation">
+    <div class="mainContainer">
+        <div class="mode" id="topmodeswitch">
+            <p><strong><span class="modeText">Teaching</span><br>mode</strong></p>
+            <label class="switch">
+
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <header class="headers">
+            <h1>
+                <span class="lNumber">Lesson 2 | Resources</span>
+                <span class="lname">Non-financial Aims and Objectives/Exam Skills 2</span>
+            </h1>
+        </header>
+        <main>
+            <section class="container toc">
+                <div class="mode">
+                    <div><span class="modeText">Planning</span> mode</div>
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><span class="modeText">Teaching</span> mode</div>
+                </div>
+                <h1>Resources</h1>
+                <ul>
+                    <li>Worksheets will need to be printed for students in advance of the lesson.</li>
+                    <li>While all care is taken to ensure resource content is in line with cultural sensitivities,
+                        please be aware that it should be reviewed before sharing with students.</li>
+                </ul>
+                <h2>Student Book</h2>
+                <button type="button" class="btn yl sb" data-id="1">Student Book pages</button>
+                <h2>Starter</h2>
+                <button type="button" class="btn yl resr" data-id="r1">Slideshow: Learning objectives</button>
+                <button type="button" class="btn yl resr" data-id="r2">Slideshow: Key definitions</button>
+                <button type="button" class="btn yl resr" data-id="r3">Worksheet 1</button>
+
+                <h2>Teaching session 1</h2>
+                <button type="button" class="btn yl resr" data-id="r4">Slideshow: Freelance or employed?</button>
+                <button type="button" class="btn yl resr" data-id="r5">Question 1</button>
+                <button type="button" class="btn yl resr" data-id="r6">Slideshow: Objectives and categories</button>
+                <button type="button" class="btn yl resr" data-id="r7">Worksheet 2</button>
+
+                <h2>Teaching session 2</h2>
+                <button type="button" class="btn yl resr" data-id="r8">Slideshow: Answering 2- and 3-mark exam
+                    questions</button>
+                <button type="button" class="btn yl resr" data-id="r9">Worksheet 3</button>
+                <button type="button" class="btn yl resr" data-id="r10">Slideshow: Suggested answer to question
+                    4</button>
+
+                <h2>Challenge</h2>
+                <button type="button" class="btn yl resr" data-id="r11">Worksheet 4</button>
+
+                <h2>End-of-lesson activity</h2>
+                <button type="button" class="btn yl resr" data-id="r12">Slideshow: Financial and non-financial
+                    objectives</button>
+
+                <h2>Homework</h2>
+                <button type="button" class="btn yl resr" data-id="r13">Homework sheet</button>
+
+                <h2>Answers</h2>
+                <button type="button" class="btn yl sb2" data-id="1">Student Book answers</button>
+                <button type="button" class="btn yl resr" data-id="r14">Answer sheet</button>
+            </section>
+
+            <h1 class="tgBanner">Resources</h1>
+            <div class="resource" id="resource1">
+                <h2 id="r1">Learning objectives</h2>
+                <div class="slideshowContainer" id="r1a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Learning objectives</h2>
+                                <p>In this lesson, students will learn to:</p>
+                                <ul>
+                                    <li>understand the different non-financial objectives that a business may have</li>
+                                    <li>distinguish between the different styles of 2- and 3-mark exam questions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource2">
+                <h2 id="r2">Key definitions</h2>
+                <div class="slideshowContainer" id="r2a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Key definitions</h2>
+                                <ul>
+                                    <li><strong>non-financial objectives: </strong>objectives that are not connected
+                                        with making money</li>
+                                    <li><strong>private sector: </strong>business organisations owned by individuals or
+                                        groups of individuals</li>
+                                    <li><strong>public sector: </strong>business organisations owned by central or local
+                                        government</li>
+                                    <li><strong>social objectives: </strong>objectives that improve human well-being
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resource" id="resource3">
+                <h2 id="r3">Starter</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson2_Worksheet1.docx">Worksheet 1</a>
+            </div>
+
+            <div class="resource" id="resource4">
+                <h2 id="r4">Teaching session 1</h2>
+                <div class="slideshowContainer" id="r4a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Freelance or employed?</h2>
+                                <p><strong>Possible answers:</strong></p>
+                                <ul>
+                                    <li>proving something to themselves/someone else</li>
+                                    <li>being their own boss</li>
+                                    <li>being creative/having freedom</li>
+                                    <li>being able to make decisions</li>
+                                    <li>having an impact on the world</li>
+                                    <li>exerting power/gain prestige</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p>Place the different reasons for wanting to start your own business into one (or more)
+                                    of the following categories:</p>
+                                <ol class="l3">
+                                    <li>to prove something to themselves/someone else</li>
+                                    <li>to be their own boss</li>
+                                    <li>to be creative/have more freedom</li>
+                                    <li>to be able to make decisions</li>
+                                    <li>to have an impact on the world</li>
+                                    <li>to exert power/gain prestige</li>
+                                </ol>
+                                <table border="1">
+                                    <tbody>
+                                        <tr>
+                                            <td width="188"><strong>Personal satisfaction</strong></td>
+                                            <td width="187"><strong>Challenge</strong></td>
+                                            <td width="190"><strong>Independence and control</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="188">&nbsp;</td>
+                                            <td width="187">&nbsp;</td>
+                                            <td width="190">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="188">&nbsp;</td>
+                                            <td width="187">&nbsp;</td>
+                                            <td width="190">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource5">
+                <h2 class="" id="r5">Teaching session 1</h2>
+                <p>Decide whether the following businesses belong to the <strong>private sector</strong> or the <strong>public sector</strong>.</p>
+                <div class="dragActivity">
+                    <div class="draglist" style="display:flex; flex-wrap: wrap;gap:30px;justify-content: space-evenly;">
+                        <p class="dragitems">Waste collection</p>
+                        <p class="dragitems">Nike</p>
+                        <p class="dragitems">Our school</p>
+                        <p class="dragitems">Local library</p>
+                        <p class="dragitems">Window cleaners</p>
+                        <p class="dragitems">Tata – a steel producer</p>
+                        <p class="dragitems">Facebook</p>
+                        <p class="dragitems">Local hospital</p>
+                        <p class="dragitems">Small local restaurant</p>
+                        <p class="dragitems">Police force</p>
+                    </div>
+                    <div class="" style="display:flex;gap:20px;width: 100%;">
+                        <p class="public" style="width: 48%;text-align: center;"><strong>Public Sector</strong></p>
+                        <p class="private" style="width: 48%;text-align: center;"><strong>Private Sector</strong></p>
+                    </div>
+                    <div class="dropContainer" style="display:flex;gap:50px;width: 100%;">
+                        <div class="public droppables" style="width: 48%;border:2px solid black;height:400px;"></div>
+                        <div class="private droppables" style="width: 48%;border:2px solid black;height:400px;"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="resource" id="resource6">
+                <h2 class="indentLeft" id="r6">Student work 1</h2>
+                <div class="slideshowContainer" id="r6a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Objectives and categories</h2>
+                                <p>Organise the following objectives into the four categories. Create a table to show
+                                    your answer.</p>
+                                <table border="1" width="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="150"><strong>A</strong> Make a business out of a hobby/interest
+                                            </td>
+                                            <td width="150"><strong>D</strong> Take me out of my comfort zone</td>
+                                            <td width="150"><strong>G</strong> Not have to do what others tell me to
+                                            </td>
+                                            <td width="163"><strong>J</strong> Test out whether I can be a success in
+                                                business</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150"><strong>B</strong> Stand by my convictions about decisions I
+                                                make</td>
+                                            <td width="150"><strong>E</strong> Be the best in my chosen field</td>
+                                            <td width="150"><strong>H</strong> Ensure that no family ever goes hungry
+                                                again</td>
+                                            <td width="163"><strong>K</strong> Ensure everyone has the same
+                                                opportunities I enjoy</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150"><strong>C</strong> Prove to myself that &lsquo;I can do
+                                                anything I choose&rsquo;</td>
+                                            <td width="150"><strong>F</strong> Make a positive difference in the world
+                                            </td>
+                                            <td width="150"><strong>I</strong> Go to sleep at night knowing I made
+                                                ethical choices at work</td>
+                                            <td width="163"><strong>L</strong> Show those who doubted me that I was
+                                                right</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <table style="height: 100px;" border="1" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr style="height: 4.625px;" valign="top">
+                                            <td style="height: 4.625px; text-align: left;" width="123"><strong>Social
+                                                    objectives</strong></td>
+                                            <td style="height: 4.625px; text-align: left;" width="147"><strong>Personal
+                                                    satisfaction</strong></td>
+                                            <td style="height: 4.625px; text-align: left;" width="122">
+                                                <strong>Challenge</strong>
+                                            </td>
+                                            <td style="height: 4.625px; text-align: left;" width="174">
+                                                <strong>Independence and control</strong>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 10px;">
+                                            <td style="height: 10px;" width="123">&nbsp;</td>
+                                            <td style="height: 10px;" width="147">&nbsp;</td>
+                                            <td style="height: 10px;" width="122">&nbsp;</td>
+                                            <td style="height: 10px;" width="174">&nbsp;</td>
+                                        </tr>
+                                        <tr style="height: 9px;">
+                                            <td style="height: 9px;" width="123">&nbsp;</td>
+                                            <td style="height: 9px;" width="147">&nbsp;</td>
+                                            <td style="height: 9px;" width="122">&nbsp;</td>
+                                            <td style="height: 9px;" width="174">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="slideItem">
+                                <h2>Possible answers</h2>
+                                <p>Note that students may have different categorisation to that suggested here</p>
+                                <table border="1" width="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="150"><strong>Social objectives</strong></td>
+                                            <td width="161"><strong>Personal satisfaction</strong></td>
+                                            <td width="139"><strong>Challenge</strong></td>
+                                            <td width="163"><strong>Independence and control</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150"><strong>H</strong> Ensure that no family ever goes hungry
+                                                again</td>
+                                            <td width="161"><strong>A</strong> Make a business out of a hobby/interest
+                                            </td>
+                                            <td width="139"><strong>D</strong> Take me out of my comfort zone</td>
+                                            <td width="163"><strong>G</strong> Not have to do what others tell me to
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150"><strong>K</strong> Ensure everyone has the same
+                                                opportunities I enjoy</td>
+                                            <td width="161"><strong>I</strong> Go to sleep at night knowing I made
+                                                ethical choices at work</td>
+                                            <td width="139"><strong>J</strong> Test out whether I can be a success in
+                                                business</td>
+                                            <td width="163"><strong>B</strong> Stand by my convictions about decisions I
+                                                make</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150"><strong>F</strong> Make a positive difference in the world
+                                            </td>
+                                            <td width="161"><strong>C</strong> Prove to myself that &lsquo;I can do
+                                                anything I choose&rsquo;</td>
+                                            <td width="139"><strong>E</strong> Be the best in my chosen field</td>
+                                            <td width="163"><strong>L</strong> Show those who doubted me that I was
+                                                right</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource7">
+                <h2 id="r7">Student work 1</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson2_Worksheet2.docx">Worksheet 2</a>
+            </div>
+
+            <div class="resource" id="resource8">
+                <h2 class="indentLeft" id="r8">Teaching session 2</h2>
+                <div class="slideshowContainer" id="r8a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Answering 2- and 3-mark exam questions</h2>
+                                <p style="text-align: center;"><strong>Answering 2- and 3-mark exam questions</strong>
+                                </p>
+                                <p>What basic answer would you suggest to gain the first mark in this
+                                    &lsquo;explain&rsquo; question?</p>
+                                <p><strong>Explain one reason that a business may decide to set non-financial objectives
+                                        as well as financial ones. (3 marks)</strong></p>
+
+                            </div>
+                            <div class="slideItem">
+                                <p>Possible answers:</p>
+                                <ul>
+                                    <li>Recognise other important inspirations</li>
+                                    <li>Appeal to certain like-minded consumers</li>
+                                    <li>Follow personal convictions/beliefs</li>
+                                    <li>Recognise the importance of community</li>
+                                </ul>
+                            </div>
+                            <div class="slideItem">
+                                <p>Review the response to this exam question and give a score out of 3. Identify where
+                                    you would award each mark that you give.</p>
+                                <p><strong>Explain one reason that a business may decide to set non-financial objectives
+                                        as well as financial ones. (3 marks)</strong></p>
+                                <p>Answer: To reflect the owner&rsquo;s personal view about what is important to them.
+                                    For example, they may set a non-financial objective to focus the business on a
+                                    social cause they believe in and so will want to measure if they are having a
+                                    positive impact by assessing how well they meet that objective.</p>
+                            </div>
+                            <div class="slideItem">
+                                <p>Explain one reason that a business may decide to set non-financial objectives as well
+                                    as financial ones. (3 marks)</p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Example reason 1
+                                    </button>
+                                    <p class="notvisible">To reflect the owner’s personal view about what is important
+                                        to them. </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Example reason 2
+                                    </button>
+                                    <p class="notvisible">To reflect the owner’s personal view about what is important
+                                        to them. For example, they may set a non-financial objective to focus the
+                                        business on a social cause they believe in </p>
+                                </div>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Example reason 3
+                                    </button>
+                                    <p class="notvisible">To reflect the owner’s personal view about what is important
+                                        to them. For example, they may set a non-financial objective to focus the
+                                        business on a social cause they believe in and so will want to measure if they
+                                        are having a positive impact by assessing how well they meet that objective.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <p>Explain one advantage of an objective of personal satisfaction. (3 marks)</p>
+                            </div>
+                            <div class="slideItem">
+                                <p><strong>Explain one advantage of an objective of personal satisfaction. (3
+                                        marks)</strong></p>
+                                <p><strong>One advantage is that the owner will be more
+                                        motivated.......</strong></p>
+                                <p style="display:flex; gap:8.3%;"><span>This means that</span> <span>strive to do their best</span> <span>which means
+                                        that</span></p>
+                                <p style="display:flex; gap:8.3%;"><span>determined to give everything</span> <span>therefore,</span> <span>work as hard
+                                        as possible</span></p>
+                                <p style="display:flex; gap:8.3%;"><span>best possible service to customers</span> <span>consequently</span> <span>and so</span></p>
+                            </div>
+                            <div class="slideItem">
+                                <p>Patricia Robins set up a charity called <em>Fresh start</em> in order to enable young
+                                    people to achieve their full potential. Patricia is the boss of the charity and has
+                                    full control over decisions.</p>
+                                <p><strong>Outline one disadvantage to Patricia of being able to control all
+                                        decision-making in the charity. (2 marks)</strong></p>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">There will be a lot of pressure on Patricia <strong>(1 mark)</strong> when taking
+                                        decisions as her choices may have a significant impact on whether the charity
+                                        can help children achieve their full potential. <strong>(1 mark)</strong></p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <p>Figure 1 shows financial information for a small caf&eacute; in 2022.</p>
+                                <table border="1" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="150">&nbsp;</td>
+                                            <td style="text-align: center;" width="150">\(﷼\) (Saudi Arabian Riyals)</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Rent</td>
+                                            <td style="text-align: center;" width="150">200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Staff wages</td>
+                                            <td style="text-align: center;" width="150">300,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Sales revenue</td>
+                                            <td style="text-align: center;" width="150">900,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Cost of ingredients</td>
+                                            <td style="text-align: center;" width="150">300,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <p>Calculate how much profit or loss the café made in 2022.</p>
+                            </div>
+                            <div class="slideItem">
+                                <table border="1" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="150">&nbsp;</td>
+                                            <td style="text-align: center;" width="150">\( ﷼ \)(Saudi Arabian Riyals)</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Rent</td>
+                                            <td style="text-align: center;" width="150">200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Staff wages</td>
+                                            <td style="text-align: center;" width="150">300,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Sales revenue</td>
+                                            <td style="text-align: center;" width="150">900,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="150">Cost of ingredients</td>
+                                            <td style="text-align: center;" width="150">300,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <p>Profit = Sales revenue &minus; Total costs</p>
+                                <p>Profit = 900,000 &minus; (300,000 + 300,000 + 200,000) = 100,000 ﷼</p>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource9">
+                <h2 id="r9">Student work 2</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson2_Worksheet3.docx">Worksheet 3</a>
+            </div>
+
+            <div class="resource" id="resource10">
+                <h2 class="indentLeft" id="r10">Student work 2</h2>
+                <div class="slideshowContainer" id="r10a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Suggested answer to Question 4</h2>
+                                <p>Example answer to Question 4:</p>
+                                <p>Setting an objective relating to an environmental goal may attract more customers.
+                                    People who are concerned about social issues such as global warming may decide to
+                                    buy from the business and may also inform their friends of the &lsquo;green
+                                    credentials&rsquo; of the firm, further increasing its sales.</p>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource11">
+                <h2 id="r11">Challenge</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson2_Worksheet4.docx">Worksheet 4</a>
+            </div>
+
+            <div class="resource" id="resource12">
+                <h2 class="indentLeft" id="r12">End-of-lesson activity</h2>
+                <div class="slideshowContainer" id="r12a">
+                    <div class="fullScrnHeader"></div>
+                    <div class="expholder">
+                        <button class="expand"></button><button class="collapse"><i class="far fa-times"></i></button>
+                    </div>
+                    <div class="slider">
+                        <button class="prev disabled" disabled></button>
+                        <div class="slideItems">
+                            <div class="slideItem active">
+                                <h2>Financial and non-financial objectives</h2>
+                                <p>Which of the following is a non-financial objective?</p>
+                                <ol class="l3">
+                                    <li>To survive the first year in business</li>
+                                    <li>To create products which improve people&rsquo;s lives</li>
+                                    <li>To sell more goods than any other firm</li>
+                                    <li>To make &pound;1 million in profit</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">B </p>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <p>Which <strong>two</strong> options below are likely to be objectives of public-sector
+                                    companies?</p>
+                                <ol class="l3">
+                                    <li>To make more money than other firms</li>
+                                    <li>To increase market share by 10%</li>
+                                    <li>To ensure that all children can read and write</li>
+                                    <li>To Increase profit by 5% in the next year</li>
+                                    <li>To improve the quality of customer service</li>
+                                    <li>To increase revenue by 20% within 3 years</li>
+                                </ol>
+                                <div class="hint qHint">
+                                    <button class="btn" type="button">
+                                        Answer
+                                    </button>
+                                    <p class="notvisible">C and E </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="next disabled" disabled></button>
+                    </div>
+                    <div class="indicators">
+                        <div class="slideno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resource" id="resource13">
+                <h2 id="r13">Homework</h2>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson2_Homework.docx">Homework</a>
+            </div>
+
+
+            <div class="resource" id="resource14">
+                <h2 id="r14">Answers</h2>
+                <p>This document contains answers for all worksheets in the lesson.</p>
+                <a class="downloadFile" href="#" file="assets\docs\iG_Business_Lesson2_Answers.docx">Answer sheet</a>
+            </div>
+        </main>
+    </div>
+    <button type="button" class="btn bl" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="fulscreenContent">
+        <div class="fulsrcsldshw">
+
+        </div>
+
+    </div>
+    <script src="../../js/script.js"></script>
+    <script>
+        $(".dragitems").draggable();
+        $(".droppables").droppable({
+            accept: "#draggable",
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function (event, ui) {
+                $(this)
+                    .addClass("ui-state-highlight")
+                    .find("p")
+                    .html("Dropped!");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
